@@ -115,8 +115,8 @@ function Faq() {
   );
 
   return (
-    <section className="relative w-full bg-slate-50/60 pb-24 pt-36 px-4 md:px-8 font-sans z-0">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative w-full bg-slate-50/60 pb-24 pt-36 px-4 md:px-8 font-sans z-0 bg-[url('/faq-bg.jpg')] bg-cover bg-center">
+      <div className="max-w-6xl mx-auto bg-white/50 p-10 rounded-xl shadow-sm shadow-[#0c2c68]">
         
         {/* Top Header Section */}
         <motion.div 
@@ -128,7 +128,7 @@ function Faq() {
         >
           <div className="flex items-center gap-2 mb-4">
             <span className="w-2.5 h-2.5 bg-amber-400 inline-block rounded-sm"></span>
-            <span className="text-[10px] font-bold tracking-[0.2em] text-sky-700">
+            <span className="text-[10px] font-bold tracking-[0.2em] text-[#0c2c68]">
               FREQUENTLY ASKED QUESTIONS
             </span>
           </div>
