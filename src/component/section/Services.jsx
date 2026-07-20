@@ -86,6 +86,9 @@ function Services() {
           ))}
         </div>
       </div>
+      <div className="flex justify-center pt-15">
+        <button className="bg-[#f38b0b] text-white px-3 py-2 rounded-lg cursor-pointer">View All Services</button>
+      </div>
     </section>
   );
 }

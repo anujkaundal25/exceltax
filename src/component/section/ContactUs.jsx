@@ -28,7 +28,7 @@ function ContactUs() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16 mt-10">
           <span className="tracking-widest text-xs md:text-sm font-black text-[#f38b0b] uppercase mb-3 block">
             GET IN TOUCH
           </span>

@@ -36,7 +36,7 @@ function GetStarted() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <span className="block mb-4 text-xs md:text-sm font-black tracking-[3px] uppercase text-[#f38b0b]">
-          GET STARTED WITH EXCELT@X
+          GET STARTED WITH exceltax 
         </span>
 
         <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-black leading-tight max-w-4xl mx-auto mb-6">
@@ -63,7 +63,7 @@ function GetStarted() {
 
       {/* Stats Card */}
       <div className="absolute left-1/2 -bottom-20 -translate-x-1/2 z-20 w-full max-w-6xl px-6">
-        <div className="bg-white border-b-3 border-yellow-500 shadow-2xl overflow-hidden">
+        <div className="bg-white border-b-5 border-yellow-500 shadow-2xl overflow-hidden">
           <div className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((item, index) => (
               <div
@@ -76,7 +76,7 @@ function GetStarted() {
                   index < 2 ? "border-b lg:border-b-0 border-gray-200" : ""
                 }`}
               >
-                <h3 className="text-[#6d9e43] text-5xl font-black mb-3">
+                <h3 className="text-[#f38b0b] text-5xl font-black mb-3">
                   {item.value}
                 </h3>
 
