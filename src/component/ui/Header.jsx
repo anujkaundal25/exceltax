@@ -23,11 +23,12 @@ function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center bg-white rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+          <a href="/">
           <img
             src="/logo.png"
             alt="Logo"
             className="h-10 md:h-12 w-auto object-contain"
-          />
+          /></a>
         </div>
 
         {/* Desktop Navigation */}

@@ -35,10 +35,12 @@ function HeroSection() {
           </p>
 
           <div className="mb-10">
-            <button className="inline-flex items-center gap-2 bg-[#f38b0b] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
-              Get Started
-              <HiArrowUpRight className="text-base stroke-2" />
-            </button>
+            <a href="#contact">
+              <button className="inline-flex items-center gap-2 bg-[#f38b0b] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
+                Get Started
+                <HiArrowUpRight className="text-base stroke-2" />
+              </button>
+            </a>
           </div>
 
           {/* Thin Divider Line */}

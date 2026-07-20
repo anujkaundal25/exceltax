@@ -21,7 +21,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="py-24 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+    <section id='contact' className="py-24 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
       {/* Subtle background grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
 

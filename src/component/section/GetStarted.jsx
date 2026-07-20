@@ -51,13 +51,17 @@ function GetStarted() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-5">
-          <button className="px-8 py-4 rounded-lg bg-[#f38b0b] hover:bg-[#d97b05] text-white font-bold uppercase transition cursor-pointer">
+          <a href="#contact">
+            <button className="px-8 py-4 rounded-lg bg-[#f38b0b] hover:bg-[#d97b05] text-white font-bold uppercase transition cursor-pointer">
             Get Started
           </button>
+          </a>
 
-          <button className="px-8 py-4 rounded-lg bg-white/10 border border-white/20 text-white backdrop-blur-sm hover:bg-white/20 transition cursor-pointer">
+          <a href="#contact">
+            <button className="px-8 py-4 rounded-lg bg-white/10 border border-white/20 text-white backdrop-blur-sm hover:bg-white/20 transition cursor-pointer">
             Contact Us
           </button>
+          </a>
         </div>
       </div>
 
