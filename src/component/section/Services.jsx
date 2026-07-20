@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import {
   BiRightArrowAlt,
@@ -8,6 +10,7 @@ import {
   BiFileFind,
   BiShieldQuarter,
 } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 function Services() {
   const servicesData = [
@@ -61,11 +64,37 @@ function Services() {
     },
   ];
 
+  // Motion Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
     <section className="py-20 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-slate-100" id="services" >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 max-w-2xl mx-auto">
+        <motion.div 
+          className="text-center mb-16 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
           <span className="tracking-widest text-xs md:text-sm font-bold text-[#f38b0b] uppercase mb-3 block">
             What We Offer
           </span>
@@ -78,24 +107,43 @@ function Services() {
             Empowering your enterprise with specialized corporate solutions built
             for modern regulatory landscapes.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Services Grid */}
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {servicesData.map((service) => (
-            <ServiceCard key={service.id} card={service} />
+            <motion.div key={service.id} variants={fadeInUp}>
+              <ServiceCard card={service} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-      <div className="flex justify-center pt-15">
-        <button className="bg-[#f38b0b] text-white px-3 py-2 rounded-lg cursor-pointer">View All Services</button>
-      </div>
+      
+      {/* Bottom Action Button */}
+      <motion.div 
+        className="flex justify-center pt-15"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+      >
+        <button className="bg-[#f38b0b] text-white px-3 py-2 rounded-lg cursor-pointer">
+          View All Services
+        </button>
+      </motion.div>
     </section>
   );
 }
 
 function ServiceCard({ card }) {
   return (
-    <div className="relative bg-white border border-gray-100 rounded-2xl p-6 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group cursor-pointer flex flex-col justify-between overflow-hidden">
+    <div className="relative bg-white border border-gray-100 rounded-2xl p-6 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group cursor-pointer flex flex-col justify-between overflow-hidden h-full">
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
       <div>

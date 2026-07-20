@@ -1,5 +1,8 @@
+"use client"
+
 import React from "react";
 import { BiLayer, BiSearchAlt, BiSelectMultiple, BiShieldQuarter } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 function WhyChooseUs() {
   const steps = [
@@ -29,6 +32,26 @@ function WhyChooseUs() {
     }
   ];
 
+  // Motion variants for side columns containing stacked steps
+  const columnVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   return (
     <section className="py-24 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
       {/* Subtle architectural grid lines for background polish */}
@@ -37,7 +60,13 @@ function WhyChooseUs() {
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-20">
+        <motion.div 
+          className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-20"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <div className="lg:col-span-7">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-2 h-4 bg-[#f38b0b] rounded-full block animate-pulse" />
@@ -62,20 +91,36 @@ function WhyChooseUs() {
               practical, customized solutions.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Main Bento Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
 
           {/* Left Column (Steps 01 & 02) */}
-          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-xs flex flex-col justify-between gap-6">
-            <StepCard step={steps[0]} />
-            <div className="h-px bg-slate-100 my-1" />
-            <StepCard step={steps[1]} />
-          </div>
+          <motion.div 
+            className="bg-white border border-slate-100 rounded-3xl p-6 shadow-xs flex flex-col justify-between gap-6"
+            variants={columnVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <motion.div variants={itemVariants} className="h-full">
+              <StepCard step={steps[0]} />
+            </motion.div>
+            <motion.div variants={itemVariants} className="h-px bg-slate-100 my-1 pointer-events-none" />
+            <motion.div variants={itemVariants} className="h-full">
+              <StepCard step={steps[1]} />
+            </motion.div>
+          </motion.div>
 
           {/* Center Showcase Image Container */}
-          <div className="relative overflow-hidden rounded-3xl min-h-[400px] lg:min-h-full group shadow-lg shadow-[#0c2c68]/5 border border-slate-100 flex items-stretch">
+          <motion.div 
+            className="relative overflow-hidden rounded-3xl min-h-[400px] lg:min-h-full group shadow-lg shadow-[#0c2c68]/5 border border-slate-100 flex items-stretch"
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <img
               src="/why-choose-us.jpg"
               alt="Exceltax Consulting Workflow"
@@ -92,14 +137,24 @@ function WhyChooseUs() {
                 Streamlining standard financial compliance workflows into high-yield strategic assets.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column (Steps 03 & 04) */}
-          <div className="bg-white border border-slate-100 rounded-3xl p-6 shadow-xs flex flex-col justify-between gap-6">
-            <StepCard step={steps[2]} />
-            <div className="h-px bg-slate-100 my-1" />
-            <StepCard step={steps[3]} />
-          </div>
+          <motion.div 
+            className="bg-white border border-slate-100 rounded-3xl p-6 shadow-xs flex flex-col justify-between gap-6"
+            variants={columnVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            <motion.div variants={itemVariants} className="h-full">
+              <StepCard step={steps[2]} />
+            </motion.div>
+            <motion.div variants={itemVariants} className="h-px bg-slate-100 my-1 pointer-events-none" />
+            <motion.div variants={itemVariants} className="h-full">
+              <StepCard step={steps[3]} />
+            </motion.div>
+          </motion.div>
 
         </div>
       </div>

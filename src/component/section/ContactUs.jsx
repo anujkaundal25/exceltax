@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { BiPhoneCall, BiEnvelope, BiMap, BiTimeFive, BiSend } from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,48 @@ function ContactUs() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Entry animation configurations
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { duration: 0.6, ease: "easeOut" } 
+    }
+  };
+
+  const leftSideVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      transition: { duration: 0.7, ease: "easeOut" } 
+    }
+  };
+
+  const rightSideVariants = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      transition: { 
+        duration: 0.7, 
+        ease: "easeOut",
+        staggerChildren: 0.2, // Staggers the context stack inside the right side column
+        delayChildren: 0.1
+      } 
+    }
+  };
+
+  const rightChildVariants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { duration: 0.5, ease: "easeOut" } 
+    }
+  };
+
   return (
     <section id='contact' className="py-24 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
       {/* Subtle background grid pattern */}
@@ -28,7 +71,13 @@ function ContactUs() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 mt-10">
+        <motion.div 
+          className="text-center max-w-2xl mx-auto mb-16 mt-10"
+          variants={headerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           <span className="tracking-widest text-xs md:text-sm font-black text-[#f38b0b] uppercase mb-3 block">
             GET IN TOUCH
           </span>
@@ -38,13 +87,19 @@ function ContactUs() {
           <p className="text-gray-500 text-sm md:text-base font-normal">
             Have a question about our corporate modules, software integrations, or legal consults? Send us a message.
           </p>
-        </div>
+        </motion.div>
 
         {/* Main Split Interface Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
           
           {/* LEFT SIDE: The Interactive Request Form */}
-          <div className="lg:col-span-7 bg-white border border-slate-100 p-8 md:p-10 rounded-3xl shadow-sm shadow-[#0c2c68] flex flex-col justify-between">
+          <motion.div 
+            className="lg:col-span-7 bg-white border border-slate-100 p-8 md:p-10 rounded-3xl shadow-sm shadow-[#0c2c68] flex flex-col justify-between"
+            variants={leftSideVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             <div>
               <h3 className="text-2xl font-black text-[#0c2c68] mb-2 tracking-tight">
                 Send a Message
@@ -116,13 +171,22 @@ function ContactUs() {
                 </button>
               </form>
             </div>
-          </div>
+          </motion.div>
 
           {/* RIGHT SIDE: Corporate Details & Live Map Container */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
+          <motion.div 
+            className="lg:col-span-5 flex flex-col gap-6"
+            variants={rightSideVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             
             {/* Quick Contact Info Strip */}
-            <div className="bg-[#0c2c68] text-white p-8 rounded-3xl shadow-xl shadow-[#0c2c68]/5 flex flex-col justify-between space-y-6">
+            <motion.div 
+              className="bg-[#0c2c68] text-white p-8 rounded-3xl shadow-xl shadow-[#0c2c68]/5 flex flex-col justify-between space-y-6"
+              variants={rightChildVariants}
+            >
               <h3 className="text-xl font-bold tracking-tight text-white mb-5">
                 Corporate Headquarters
               </h3>
@@ -159,10 +223,13 @@ function ContactUs() {
                 </div>
 
               </div>
-            </div>
+            </motion.div>
 
             {/* Live Map Window Container */}
-            <div className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-xl shadow-slate-100/50 flex-1 min-h-[250px] relative">
+            <motion.div 
+              className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-xl shadow-slate-100/50 flex-1 min-h-[250px] relative"
+              variants={rightChildVariants}
+            >
               <iframe
                 title="Exceltax Headquarters Map Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509604!2d144.95373531590483!3d-37.816279742021234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sus!4v1619528731420!5m2!1sen!2sus"
@@ -170,9 +237,9 @@ function ContactUs() {
                 allowFullScreen=""
                 loading="lazy"
               />
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
         </div>
       </div>

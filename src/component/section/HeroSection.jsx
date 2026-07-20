@@ -1,9 +1,42 @@
+"use client"
+
 import React from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FiCheckSquare } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   const benefits = ["Tax Planning", "Strategic Advice", "Audit Support"];
+
+  // Framer Motion Variants for cleaner orchestration
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: 40 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
 
   return (
     // min-h calculation ensures it accounts for the desktop header height perfectly without over-scrolling
@@ -19,35 +52,49 @@ function HeroSection() {
 
       <div className="max-w-7xl mx-auto w-full px-6 py-12 lg:py-0 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10 h-full">
         {/* Left Side Content Column */}
-        <div className="lg:col-span-7 flex flex-col justify-center text-left py-6 lg:py-12">
-          <span className="tracking-widest uppercase text-xs md:text-sm font-bold text-yellow-400 uppercase mb-3 block">
+        <motion.div 
+          className="lg:col-span-7 flex flex-col justify-center text-left py-6 lg:py-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.span 
+            className="tracking-widest uppercase text-xs md:text-sm font-bold text-yellow-400 uppercase mb-3 block"
+            variants={itemVariants}
+          >
             welcome to exceltax
-          </span>
+          </motion.span>
 
-          <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 max-w-2xl bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent">
+          <motion.h1 
+            className="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 max-w-2xl bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent"
+            variants={itemVariants}
+          >
             Leave Your Taxes To <br className="hidden sm:inline" />
             The Professionals
-          </h1>
+          </motion.h1>
 
-          <p className="text-base md:text-lg text-gray-300 font-light max-w-xl mb-8 leading-relaxed">
+          <motion.p 
+            className="text-base md:text-lg text-gray-300 font-light max-w-xl mb-8 leading-relaxed"
+            variants={itemVariants}
+          >
             Pharetra adipiscing himenaeos consectetur tempus magna auctor si
             dictumst potenti.
-          </p>
+          </motion.p>
 
-          <div className="mb-10">
+          <motion.div className="mb-10" variants={itemVariants}>
             <a href="#contact">
               <button className="inline-flex items-center gap-2 bg-[#f38b0b] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
                 Get Started
                 <HiArrowUpRight className="text-base stroke-2" />
               </button>
             </a>
-          </div>
+          </motion.div>
 
           {/* Thin Divider Line */}
-          <div className="w-full h-[1px] bg-white/15 mb-8 max-w-xl" />
+          <motion.div className="w-full h-[1px] bg-white/15 mb-8 max-w-xl" variants={itemVariants} />
 
           {/* Features/Benefits List */}
-          <div className="flex flex-wrap gap-x-8 gap-y-4">
+          <motion.div className="flex flex-wrap gap-x-8 gap-y-4" variants={itemVariants}>
             {benefits.map((benefit) => (
               <div key={benefit} className="flex items-center gap-2.5 group">
                 <FiCheckSquare className="text-[#f38b0b] text-xl transition-transform duration-300 group-hover:scale-110" />
@@ -56,19 +103,24 @@ function HeroSection() {
                 </span>
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Side Image Cutout Column */}
         {/* self-end brings it down flush to the bottom; max-h settings prevent it from blowing out vertical space */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end items-end mt-6 lg:mt-0">
-          <div className="relative w-full max-w-[400px] lg:max-w-[550px] xl:max-w-[650px]">
+          <motion.div 
+            className="relative w-full max-w-[400px] lg:max-w-[550px] xl:max-w-[650px]"
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <img
               src="/hero-section/herosection.png"
               alt="Professional Accountant holding clipboard"
-              className="w-full h-auto object-contain select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 hover:scale-[1.01]"
+              className="w-full -mb-12 lg:m-0 lg:h-auto object-contain select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 hover:scale-[1.01]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

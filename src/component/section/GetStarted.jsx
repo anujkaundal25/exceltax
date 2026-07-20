@@ -1,4 +1,7 @@
+"use client"
+
 import React from "react";
+import { motion } from "framer-motion";
 
 function GetStarted() {
   const stats = [
@@ -20,6 +23,50 @@ function GetStarted() {
     },
   ];
 
+  // Motion Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const statContainerVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const statItemVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.4 },
+    },
+  };
+
   return (
     <section className="relative bg-slate-900 px-6 lg:px-20 pt-32 lg:pt-40 pb-64 overflow-visible">
       {/* Background */}
@@ -34,44 +81,66 @@ function GetStarted() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <span className="block mb-4 text-xs md:text-sm font-black tracking-[3px] uppercase text-[#f38b0b]">
+      <motion.div 
+        className="relative z-10 max-w-7xl mx-auto text-center"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
+        <motion.span 
+          className="block mb-4 text-xs md:text-sm font-black tracking-[3px] uppercase text-[#f38b0b]"
+          variants={itemVariants}
+        >
           GET STARTED WITH exceltax 
-        </span>
+        </motion.span>
 
-        <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-black leading-tight max-w-4xl mx-auto mb-6">
+        <motion.h2 
+          className="text-white text-3xl md:text-4xl lg:text-5xl font-black leading-tight max-w-4xl mx-auto mb-6"
+          variants={itemVariants}
+        >
           Complete Tax, Legal, and Business Management Solutions
-        </h2>
+        </motion.h2>
 
-        <p className="text-slate-300 max-w-2xl mx-auto leading-8 mb-12">
+        <motion.p 
+          className="text-slate-300 max-w-2xl mx-auto leading-8 mb-12"
+          variants={itemVariants}
+        >
           Optimize your enterprise performance. From specialized corporate
           advisory and custom digital ERP management software to continuous
           legal defense, secure online filing operations, and asset recovery
           systems.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-5">
+        <motion.div className="flex flex-col sm:flex-row justify-center gap-5" variants={itemVariants}>
           <a href="#contact">
             <button className="px-8 py-4 rounded-lg bg-[#f38b0b] hover:bg-[#d97b05] text-white font-bold uppercase transition cursor-pointer">
-            Get Started
-          </button>
+              Get Started
+            </button>
           </a>
 
           <a href="#contact">
             <button className="px-8 py-4 rounded-lg bg-white/10 border border-white/20 text-white backdrop-blur-sm hover:bg-white/20 transition cursor-pointer">
-            Contact Us
-          </button>
+              Contact Us
+            </button>
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Stats Card */}
-      <div className="absolute left-1/2 -bottom-20 -translate-x-1/2 z-20 w-full max-w-6xl px-6">
+      <motion.div 
+        className="absolute left-1/2 -bottom-20 -translate-x-1/2 z-20 w-full max-w-6xl px-6"
+        variants={statContainerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <div className="bg-white border-b-5 border-yellow-500 shadow-2xl overflow-hidden">
           <div className="grid grid-cols-2 lg:grid-cols-4">
             {stats.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={statItemVariants}
                 className={`py-10 px-6 text-center ${
                   index !== stats.length - 1
                     ? "border-r border-gray-200"
@@ -87,11 +156,11 @@ function GetStarted() {
                 <p className="text-gray-700 font-semibold tracking-wide">
                   {item.label}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
