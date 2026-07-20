@@ -134,7 +134,7 @@ function ContactUs() {
                   </div>
                   <div>
                     <span className="text-xs text-slate-300 block font-medium">Call Infrastructure</span>
-                    <a href="tel:+00237652521717" className="text-sm font-bold hover:text-[#f38b0b] transition-colors">+00237 652 521 717</a>
+                    <a href="tel:+237652521717" className="text-sm font-bold hover:text-[#f38b0b] transition-colors">+237 652 521 717</a>
                   </div>
                 </div>
 

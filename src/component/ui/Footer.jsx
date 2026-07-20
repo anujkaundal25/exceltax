@@ -3,23 +3,23 @@ import React from "react";
 function Footer() {
   const quickLinks = [
   { label: "Welcome", href: "/" },
-  { label: "Advice", href: "/advice" },
-  { label: "Exsafe", href: "/exsafe" },
-  { label: "Education", href: "/education" },
-  { label: "Online Procedure", href: "/online-procedure" },
-  { label: "JurisFiscal", href: "/jurisfiscal" },
-  { label: "Event", href: "/event" },
-  { label: "Well-Being", href: "/well-being" },
-  { label: "About", href: "/about" },
+  { label: "Advice", href: "/" },
+  { label: "Exsafe", href: "/" },
+  { label: "Education", href: "/" },
+  { label: "Online Procedure", href: "/" },
+  { label: "JurisFiscal", href: "/" },
+  { label: "Event", href: "/" },
+  { label: "Well-Being", href: "/" },
+  { label: "About", href: "/" },
 ];
 
   const services = [
-    { label: "EXCELTAX Conseil", href: "/" },
-    { label: "EXCELTAX Logi", href: "/" },
-    { label: "EXCELTAX Edu", href: "/" },
-    { label: "EXCELT@X JuriFiscal", href: "/" },
-    { label: "EXCELT@X TéléProcédure", href: "/" },
-    { label: "EXCELT@X Recouv", href: "/" },
+    { label: "EXCELTAX Conseil", href: "#services" },
+    { label: "EXCELTAX Logi", href: "#services" },
+    { label: "EXCELTAX Edu", href: "#services" },
+    { label: "EXCELT@X JuriFiscal", href: "#services" },
+    { label: "EXCELT@X TéléProcédure", href: "#services" },
+    { label: "EXCELT@X Recouv", href: "#services" },
   ];
 
   return (

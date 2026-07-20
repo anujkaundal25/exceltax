@@ -62,7 +62,7 @@ function Services() {
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-slate-100">
+    <section className="py-20 px-6 lg:px-20 bg-gradient-to-b from-slate-50 to-slate-100" id="services" >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
