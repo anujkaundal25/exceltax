@@ -63,7 +63,10 @@ function Header() {
         }`}
       >
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-          <span className="font-bold text-lg text-gray-400">Navigation</span>
+          <span className="font-bold text-lg text-gray-400">
+            <a href="/">
+            <img src="/logo.png" alt="" className="h-10 md:h-15 w-auto object-contain"/></a>
+          </span>
           <button
             onClick={() => setIsOpen(false)}
             className="p-2 rounded-md hover:bg-gray-100 transition-colors"
