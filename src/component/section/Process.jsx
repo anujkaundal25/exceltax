@@ -26,7 +26,7 @@ function Process() {
 ];
 
   return (
-    <section className="py-24 px-6 lg:px-20 bg-white relative overflow-hidden bg-[url('/approach/approach-bg.jpg')] bg-cover bg-center">
+    <section className="py-24 px-6 lg:px-20 bg-white relative overflow-hidden bg-[url('/process-bg.jpg')] bg-cover bg-center">
       {/* Background radial dot styling from your image */}
       <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-60 pointer-events-none" />
       
