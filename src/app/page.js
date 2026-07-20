@@ -9,6 +9,7 @@ import Header from "@/component/ui/Header";
 import Footer from "@/component/ui/Footer";
 
 import Image from "next/image";
+import Faq from "@/component/section/Faq";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <WhyChooseUs/>
       <Process/>
       <GetStarted/>
+      <Faq/>
       <ContactUs/>
       <Footer/>
     </div>
