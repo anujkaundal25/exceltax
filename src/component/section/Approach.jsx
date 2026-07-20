@@ -42,7 +42,7 @@ function Approach() {
   };
 
   return (
-    <section className="py-16 px-6 lg:px-20 bg-[url('/approach/approach-bg.jpg')] bg-cover bg-center">
+    <section className="py-16 px-6 lg:px-20 bg-[url('/approach/approach-bg.webp')] bg-cover bg-center">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         
         {/* Mobile Heading Box: Only visible on mobile, hidden on desktop (lg) */}

@@ -115,7 +115,7 @@ function Faq() {
   );
 
   return (
-    <section className="relative w-full bg-slate-50/60 pb-24 pt-36 px-4 md:px-8 font-sans z-0 bg-[url('/faq-bg.jpg')] bg-cover bg-center">
+    <section className="relative w-full bg-slate-50/60 pb-24 pt-36 px-4 md:px-8 font-sans z-0 bg-[url('/faq-bg.webp')] bg-cover bg-center">
       <div className="max-w-6xl mx-auto bg-white/50 p-10 rounded-xl shadow-sm shadow-[#0c2c68]">
         
         {/* Top Header Section */}

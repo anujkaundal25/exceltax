@@ -43,7 +43,7 @@ function HeroSection() {
     <section className="relative w-full min-h-[calc(100vh-80px)] xl:h-[calc(100vh-80px)] bg-gradient-to-r from-[#041431] via-[#08204d] to-[#0c2c68] text-white overflow-hidden flex items-center">
       {/* Background Image Overlay for Texture */}
       <div
-        className="absolute inset-0 bg-[url('/hero-section/hero-bg.jpg')] bg-cover bg-center mix-blend-overlay opacity-15 pointer-events-none"
+        className="absolute inset-0 bg-[url('/hero-section/hero-bg.webp')] bg-cover bg-center mix-blend-overlay opacity-15 pointer-events-none"
         aria-hidden="true"
       />
 
