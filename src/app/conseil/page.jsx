@@ -45,52 +45,52 @@ const scaleIn = {
 
 export default function Page() {
   const countries = [
-    { name: "Cameroon", flag: "/conseil/cameroon.png" },
-    { name: "Chad", flag: "/conseil/chad.png" },
-    { name: "Central African Republic", flag: "/conseil/car.png" },
-    { name: "Republic of the Congo", flag: "/conseil/congo.png" },
-    { name: "Equatorial Guinea", flag: "/conseil/equatorial-guinea.png" },
+    { name: "Cameroun", flag: "/conseil/cameroon.png" },
+    { name: "Tchad", flag: "/conseil/chad.png" },
+    { name: "République Centrafricaine", flag: "/conseil/car.png" },
+    { name: "République du Congo", flag: "/conseil/congo.png" },
+    { name: "Guinée Équatoriale", flag: "/conseil/equatorial-guinea.png" },
     { name: "Gabon", flag: "/conseil/gabon.png" },
   ];
 
   const service = [
     {
       id: 1,
-      title: "Taxation",
-      dis: "Comprehensive tax planning, filing, compliance, and advisory services for individuals and businesses.",
+      title: "Fiscalité",
+      dis: "Planning fiscal complet, déclarations, conformité et services de conseil pour particuliers et entreprises.",
       image:
         "https://images.pexels.com/photos/6863330/pexels-photo-6863330.jpeg",
     },
     {
       id: 2,
-      title: "Accounting",
-      dis: "Professional bookkeeping, financial reporting, payroll, and accounting solutions to keep your business organized.",
+      title: "Comptabilité",
+      dis: "Tenue de livres professionnelle, rapports financiers, gestion de la paie et solutions comptables adaptées.",
       image:
         "https://images.pexels.com/photos/6779565/pexels-photo-6779565.jpeg",
     },
     {
       id: 3,
-      title: "Social Security",
-      dis: "Expert assistance with social security registration, contributions, compliance, and employee benefit management.",
+      title: "Sécurité Sociale",
+      dis: "Assistance experte pour l'immatriculation, les cotisations, la conformité et la gestion des avantages sociaux.",
       image: "https://images.pexels.com/photos/210705/pexels-photo-210705.jpeg",
     },
     {
       id: 4,
-      title: "DGT Services",
-      dis: "Reliable support for DGT registration, documentation, regulatory compliance, and government-related processes.",
+      title: "Services DGT",
+      dis: "Accompagnement pour l'immatriculation DGT, la documentation, la conformité réglementaire et les démarches administratives.",
       image: "https://exceltax.org/conseil/assets/images/images.png",
     },
     {
       id: 5,
-      title: "Tax Accountant",
-      dis: "Dedicated tax accounting services including tax preparation, audits, financial planning, and compliance support.",
+      title: "Expertise Fiscale",
+      dis: "Services spécialisés en comptabilité fiscale : préparation aux contrôles, audits et planification financière.",
       image:
         "https://images.pexels.com/photos/8962521/pexels-photo-8962521.jpeg",
     },
     {
       id: 6,
-      title: "Recovery Services",
-      dis: "Professional debt recovery and financial recovery solutions designed to help businesses recover outstanding payments.",
+      title: "Recouvrement",
+      dis: "Solutions professionnelles de recouvrement de créances conçues pour optimiser votre trésorerie.",
       image: "https://exceltax.org/conseil/assets/images/537.jpg",
     },
   ];
@@ -98,27 +98,27 @@ export default function Page() {
   const features = [
     {
       icon: FiTarget,
-      title: "Personalized Solutions",
+      title: "Solutions Personnalisées",
       description:
-        "Every business is unique. We develop strategies tailored to your industry and objectives.",
+        "Chaque entreprise est unique. Nous élaborons des stratégies adaptées à votre secteur et à vos objectifs.",
     },
     {
       icon: FiTrendingUp,
-      title: "Data-Driven Growth",
+      title: "Croissance Basée sur les Données",
       description:
-        "Leverage analytics and actionable insights to make informed business decisions.",
+        "Exploitez l'analyse de données et des insights pertinents pour prendre des décisions éclairées.",
     },
     {
       icon: FiShield,
-      title: "Trusted Expertise",
+      title: "Expertise de Confiance",
       description:
-        "Partner with industry experts dedicated to scaling your business securely.",
+        "Partenaire privilégié des spécialistes dédiés à la sécurisation et au développement de votre activité.",
     },
     {
       icon: FiZap,
-      title: "Fast Execution",
+      title: "Exécution Rapide",
       description:
-        "Turn ideas into high-performing digital strategies with quick turnaround times.",
+        "Transformez vos idées en stratégies digitales performantes avec des délais d'exécution optimisés.",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function Page() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/conseil/hero-section-bg.webp"
-              alt="Modern corporate background"
+              alt="Arrière-plan d'entreprise moderne"
               fill
               priority
               className="object-cover object-center opacity-40"
@@ -158,7 +158,7 @@ export default function Page() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#186594]/30 border border-[#186594]/50 text-xs sm:text-sm font-medium text-orange-400 backdrop-blur-md shadow-lg"
             >
               <FiShield className="w-4 h-4 text-orange-400" aria-hidden="true" />
-              <span>Trusted CEMAC Financial Advisors</span>
+              <span>Conseillers Financiers de Confiance en Zone CEMAC</span>
             </motion.div>
 
             {/* Main Heading */}
@@ -166,9 +166,9 @@ export default function Page() {
               variants={fadeInUp}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white max-w-4xl mx-auto drop-shadow-md"
             >
-              Integrated Tax & Business Consulting for{" "}
+              Conseil Fiscal et Stratégique Intégré pour{" "}
               <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500 bg-clip-text text-transparent">
-                Growing Companies
+                Entreprises en Croissance
               </span>
             </motion.h1>
 
@@ -177,9 +177,8 @@ export default function Page() {
               variants={fadeInUp}
               className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow"
             >
-              Helping businesses across the CEMAC region simplify taxation,
-              ensure compliance, and achieve sustainable financial growth
-              through expert consulting.
+              Accompagner les entreprises de la zone CEMAC à simplifier leur fiscalité,
+              garantir leur conformité et atteindre une croissance financière durable.
             </motion.p>
 
             {/* Buttons */}
@@ -191,7 +190,7 @@ export default function Page() {
                 href="#consultation"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 font-semibold text-white shadow-xl shadow-orange-500/20 transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-orange-400"
               >
-                Schedule Consultation
+                Prendre Rendez-vous
                 <FiArrowRight className="w-4 h-4" aria-hidden="true" />
               </a>
 
@@ -200,7 +199,7 @@ export default function Page() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#186594]/40 hover:bg-[#186594]/60 border border-[#186594]/60 font-semibold text-white backdrop-blur-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/30"
               >
                 <FiPhoneCall className="w-4 h-4 text-orange-400" aria-hidden="true" />
-                Contact Our Team
+                Contacter Notre Équipe
               </a>
             </motion.div>
           </motion.div>
@@ -221,23 +220,23 @@ export default function Page() {
                   variants={fadeInUp}
                   className="inline-block bg-orange-100 text-orange-600 text-sm font-semibold px-4 py-2 rounded-full mb-5"
                 >
-                  Global Presence
+                  Présence Régionale
                 </motion.span>
 
                 <motion.h2
                   variants={fadeInUp}
                   className="text-2xl lg:text-4xl font-bold text-[#041431] leading-tight mb-6"
                 >
-                  Countries <span className="text-orange-500">Concerned</span>
+                  Pays <span className="text-orange-500">Concertés</span>
                 </motion.h2>
 
                 <motion.p
                   variants={fadeInUp}
                   className="text-gray-600 text-lg leading-8 mb-8"
                 >
-                  "Explore our services available throughout the{" "}
+                  « Découvrez nos services disponibles dans toute la zone{" "}
                   <span className="font-semibold text-[#186594]">CEMAC</span>{" "}
-                  zone: tailored support in the heart of Central Africa!"
+                  : un accompagnement sur-mesure au cœur de l'Afrique Centrale ! »
                 </motion.p>
 
                 <motion.div
@@ -278,7 +277,7 @@ export default function Page() {
                 <div className="relative rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
                   <img
                     src="/conseil/2.png"
-                    alt="Countries Concerned"
+                    alt="Pays Concertés"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -296,7 +295,7 @@ export default function Page() {
               viewport={{ once: true }}
               className="text-2xl lg:text-4xl font-bold text-white leading-tight mb-12 text-center"
             >
-              Our Professional Services
+              Nos Services Professionnels
             </motion.h3>
 
             <motion.div
@@ -335,7 +334,7 @@ export default function Page() {
                           {item.dis}
                         </p>
                         <span className="inline-flex items-center gap-1 text-sm text-orange-400 font-semibold mt-4">
-                          View More &rarr;
+                          Voir plus &rarr;
                         </span>
                       </div>
                     </div>
@@ -355,10 +354,10 @@ export default function Page() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold tracking-tight text-[#041431] sm:text-4xl">
-              Why Choose Us
+              Pourquoi Nous Choisir
             </h2>
             <p className="mt-3 text-lg text-slate-600">
-              Tailored strategies designed to help your business thrive.
+              Des stratégies sur mesure pour soutenir la réussite de votre entreprise.
             </p>
           </motion.div>
 
@@ -417,14 +416,14 @@ export default function Page() {
                 EXCELTAXCONSEIL
               </span>
               <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#041431] leading-tight">
-                Turn Your Dreams Into{" "}
+                Transformez Vos Rêves En{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#186594] to-orange-500">
-                  Reality
+                  Réalité
                 </span>
               </h1>
               <p className="text-slate-600 text-lg">
-                Navigating the complex world of tax regulations so you can focus
-                on scale and innovation.
+                Simplifiez la gestion des réglementations fiscales pour vous concentrer
+                sur le développement et l'innovation.
               </p>
             </motion.div>
 
@@ -445,18 +444,18 @@ export default function Page() {
                 <div className="space-y-4">
                   <div className="w-8 h-1 bg-[#186594] rounded-full group-hover:w-16 transition-all duration-300" />
                   <h2 className="text-2xl font-bold text-[#041431]">
-                    Tax & Accounting Partnership Program
+                    Programme de Partenariat Fiscal & Comptable
                   </h2>
                   <p className="text-slate-600 leading-relaxed">
-                    We offer an innovative accounting solution dedicated to
-                    optimizing your tax results. Don't let complex tax
-                    regulations hinder your growth. With EXCELTAXconseil,
-                    transform these challenges into genuine performance
-                    drivers.
+                    Nous proposons une solution comptable innovante dédiée à
+                    l'optimisation de vos résultats fiscaux. Ne laissez plus la
+                    complexité réglementaire freiner votre croissance. Avec
+                    EXCELTAXconseil, transformez ces défis en véritables leviers de
+                    performance.
                   </p>
                 </div>
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center text-[#186594] font-semibold group-hover:translate-x-1 transition-transform cursor-pointer">
-                  <span>Learn more about optimization</span>
+                  <span>En savoir plus sur l'optimisation</span>
                   <span className="ml-2 font-bold">&rarr;</span>
                 </div>
               </motion.div>
@@ -470,17 +469,17 @@ export default function Page() {
                 <div className="space-y-4">
                   <div className="w-8 h-1 bg-orange-500 rounded-full group-hover:w-16 transition-all duration-300" />
                   <h2 className="text-2xl font-bold text-[#041431]">
-                    Stress-Free Tax Management
+                    Gestion Fiscale en Toute Sérénité
                   </h2>
                   <p className="text-slate-600 leading-relaxed">
-                    Tax management shouldn't be a source of anxiety, but a
-                    powerful tool for overall performance. Through our
-                    personalized services and proactive approach, navigate the
-                    tax landscape with total confidence.
+                    La gestion fiscale ne doit pas être une source d'anxiété, mais un
+                    outil puissant au service de votre performance globale. Grâce à
+                    nos services personnalisés et notre approche proactive, abordez le
+                    paysage fiscal en toute confiance.
                   </p>
                 </div>
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center text-orange-500 font-semibold group-hover:translate-x-1 transition-transform cursor-pointer">
-                  <span>Explore proactive management</span>
+                  <span>Découvrir la gestion proactive</span>
                   <span className="ml-2 font-bold">&rarr;</span>
                 </div>
               </motion.div>
@@ -490,7 +489,7 @@ export default function Page() {
             <div className="pt-10 space-y-10">
               <div className="flex items-center space-x-4">
                 <h2 className="text-3xl font-bold text-[#041431] tracking-wide">
-                  Key Challenges We Solve
+                  Les Défis Majeurs Que Nous Relevons
                 </h2>
                 <div className="flex-1 h-[1px] bg-gradient-to-r from-slate-200 to-transparent" />
               </div>
@@ -512,11 +511,11 @@ export default function Page() {
                   </span>
                   <div className="space-y-2">
                     <h3 className="text-xl font-semibold text-[#041431]">
-                      Regulatory Complexity & Instability
+                      Complexité et Instabilité Réglementaire
                     </h3>
                     <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                      Taxation is a constantly evolving field, making compliance
-                      particularly difficult and time-consuming for growing SMEs.
+                      La fiscalité est un domaine en constante évolution, rendant la
+                      conformité particulièrement complexe et chronophage pour les PME.
                     </p>
                   </div>
                 </motion.div>
@@ -531,12 +530,12 @@ export default function Page() {
                   </span>
                   <div className="space-y-2">
                     <h3 className="text-xl font-semibold text-[#041431]">
-                      Declarative Tax System Risks
+                      Risques du Système Déclaratif
                     </h3>
                     <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-                      Self-declaration exposes companies to high tax audit risks
-                      and severe reassessments when managed without specialized
-                      expertise.
+                      L'auto-déclaration expose les entreprises à de forts risques de
+                      contrôles et de redressements fiscaux en l'absence d'une expertise
+                      dédiée.
                     </p>
                   </div>
                 </motion.div>

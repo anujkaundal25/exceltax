@@ -9,7 +9,7 @@ function Header() {
   const navItems = [
     { name: "Welcome", url: "/" },
     { name: "Advice", url: "/conseil" },
-    { name: "Exsafe", url: "/exsafe" },
+    { name: "Exsafe", url: "/logiciel" },
     { name: "Education", url: "/education" },
     { name: "Online Procedure", url: "/online-procedure" },
     { name: "JurisFiscal", url: "/jurisfiscal" },
