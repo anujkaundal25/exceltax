@@ -10,15 +10,15 @@ function Approach() {
   const features = [
     {
       icon: HiOutlineLightBulb,
-      title: "Identify the Problems:",
+      title: "Identifier les Problèmes :",
       description:
-        "We conduct a comprehensive audit of your management and information system.",
+        "Nous réalisons un audit complet de votre système de gestion et d'information.",
     },
     {
       icon: SiCardmarket, 
-      title: "Representing Your Company:",
+      title: "Représenter Votre Entreprise :",
       description:
-        "We act as an agent with tax authorities for all tax and parafiscal issues.",
+        "Nous agissons en tant que mandataire auprès des autorités fiscales pour toutes les questions fiscales et parafiscales.",
     },
   ];
 
@@ -52,11 +52,11 @@ function Approach() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Our Approach</h3>
+          <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Notre Démarche</h3>
           <p className="text-[#0c2c68]">
-            By acting as both your company's tax advisor and lawyer, and by
-            taking a systemic view of your business (One-Stop Shop
-            Approach), our goal is to:
+            En agissant à la fois comme conseiller fiscal et avocat de votre entreprise, et en adoptant
+            une vision systémique de votre activité (Approche Guichet Unique),
+            notre objectif est de :
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ function Approach() {
           >
             <img
               src="/approach/approach.jpg"
-              alt="Our Approach"
+              alt="Notre Démarche"
               className="w-full h-auto rounded-2xl shadow-xl object-cover"
             />
 
@@ -81,11 +81,11 @@ function Approach() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Our Approach</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Notre Démarche</h3>
               <p className="text-[#0c2c68]">
-                By acting as both your company's tax advisor and lawyer, and by
-                taking a systemic view of your business (One-Stop Shop
-                Approach), our goal is to:
+                En agissant à la fois comme conseiller fiscal et avocat de votre entreprise, et en
+                adoptant une vision systémique de votre activité (Approche
+                Guichet Unique), notre objectif est de :
               </p>
             </motion.div>
           </motion.div>
@@ -102,17 +102,16 @@ function Approach() {
             className="text-3xl sm:text-4xl font-extrabold text-[#0c2c68] leading-tight mb-6"
             variants={fadeInUp}
           >
-            A One-Stop Solution for Your Business Success
+            Une Solution Guichet Unique pour la Réussite de Votre Entreprise
           </motion.h2>
 
           <motion.p 
             className="text-gray-600 leading-relaxed mb-8 text-base md:text-lg"
             variants={fadeInUp}
           >
-            By acting as both your company's tax advisor and legal partner,
-            while taking a comprehensive view of your business, we provide a
-            One-Stop Shop approach that simplifies complex financial and legal
-            matters.
+            En agissant à la fois comme conseiller fiscal et partenaire juridique de votre entreprise,
+            tout en adoptant une vue d'ensemble de votre activité, nous proposons une approche
+            Guichet Unique qui simplifie les questions financières et juridiques complexes.
           </motion.p>
 
           {/* Feature List */}
@@ -144,7 +143,7 @@ function Approach() {
           {/* CTA Action Button */}
           <motion.div className="mt-10" variants={fadeInUp}>
             <button className="px-8 py-3.5 bg-[#0c2c68] hover:bg-black text-white font-semibold text-sm tracking-wide rounded-lg transition-all duration-300 shadow-md active:scale-98 cursor-pointer">
-              Learn More
+              En Savoir Plus
             </button>
           </motion.div>
         </motion.div>

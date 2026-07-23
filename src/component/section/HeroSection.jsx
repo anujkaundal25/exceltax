@@ -6,7 +6,7 @@ import { FiCheckSquare } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function HeroSection() {
-  const benefits = ["Tax Planning", "Strategic Advice", "Audit Support"];
+  const benefits = ["Planification Fiscale", "Conseils Stratégiques", "Assistance en Cas d'Audit"];
 
   // Framer Motion Variants for cleaner orchestration
   const containerVariants = {
@@ -62,15 +62,15 @@ function HeroSection() {
             className="tracking-widest uppercase text-xs md:text-sm font-bold text-yellow-400 uppercase mb-3 block"
             variants={itemVariants}
           >
-            welcome to exceltax
+            bienvenue chez exceltax
           </motion.span>
 
           <motion.h1 
             className="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 max-w-2xl bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent"
             variants={itemVariants}
           >
-            Leave Your Taxes To <br className="hidden sm:inline" />
-            The Professionals
+            Confiez Vos Impôts À <br className="hidden sm:inline" />
+            Des Professionnels
           </motion.h1>
 
           <motion.p 
@@ -84,7 +84,7 @@ function HeroSection() {
           <motion.div className="mb-10" variants={itemVariants}>
             <a href="#contact">
               <button className="inline-flex items-center gap-2 bg-[#f38b0b] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
-                Get Started
+                Commencer
                 <HiArrowUpRight className="text-base stroke-2" />
               </button>
             </a>
@@ -117,7 +117,7 @@ function HeroSection() {
           >
             <img
               src="/hero-section/herosection.png"
-              alt="Professional Accountant holding clipboard"
+              alt="Comptable professionnel tenant un porte-bloc"
               className="w-full -mb-12 lg:m-0 lg:h-auto object-contain select-none drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 hover:scale-[1.01]"
             />
           </motion.div>

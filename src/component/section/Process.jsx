@@ -6,24 +6,24 @@ import { motion } from "framer-motion";
 function Process() {
   const processSteps = [
     {
-      stepNumber: "STEP 1",
-      title: "Book a Consultation",
+      stepNumber: "ÉTAPE 1",
+      title: "Réserver une Consultation",
       description:
-        "Schedule a consultation with our tax and financial experts. We take the time to understand your business, financial objectives, and compliance requirements.",
+        "Prenez rendez-vous avec nos experts fiscaux et financiers. Nous prenons le temps de comprendre votre entreprise, vos objectifs financiers et vos exigences de conformité.",
       bannerBg: "bg-[#0c2c68]",
     },
     {
-      stepNumber: "STEP 2",
-      title: "Expert Assessment & Strategy",
+      stepNumber: "ÉTAPE 2",
+      title: "Évaluation d'Expert & Stratégie",
       description:
-        "Our specialists analyze your tax position, accounting records, and business needs to create a customized strategy that ensures compliance and supports growth.",
+        "Nos spécialistes analysent votre situation fiscale, vos registres comptables et les besoins de votre entreprise afin de créer une stratégie sur mesure qui garantit la conformité et soutient la croissance.",
       bannerBg: "bg-[#f38b0b]",
     },
     {
-      stepNumber: "STEP 3",
-      title: "Implementation & Ongoing Support",
+      stepNumber: "ÉTAPE 3",
+      title: "Mise en Œuvre & Accompagnement Continu",
       description:
-        "We manage tax filings, accounting, legal compliance, and business advisory services while providing continuous support to keep your business efficient and compliant.",
+        "Nous gérons les déclarations fiscales, la comptabilité, la conformité juridique et le conseil de gestion tout en vous offrant un accompagnement continu pour maintenir votre entreprise performante et conforme.",
       bannerBg: "bg-[#0c2c68]",
     },
   ];
@@ -64,10 +64,10 @@ function Process() {
           transition={{ duration: 0.6 }}
         >
           <span className="tracking-widest text-xs md:text-sm font-bold text-[#f38b0b] uppercase mb-3 block">
-            OUR PROCESS
+            NOTRE PROCESSUS
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-[#0c2c68] tracking-tight mb-6">
-            Our Simple Working Process
+            Notre Processus de Travail Simple
           </h2>
           <p className="text-gray-800 text-sm md:text-base leading-relaxed font-normal">
             Interdum fringilla justo aptent consequat sem arcu ullamcorper. A himenaeos lacus torquent conubia quis erat luctus et turpis lectus ante.

@@ -8,26 +8,26 @@ function WhyChooseUs() {
   const steps = [
     {
       id: "01",
-      title: "Initial Consultation",
-      description: "We understand your business objectives, evaluate your tax structure, and identify opportunities to improve compliance and operational efficiency.",
+      title: "Consultation Initiale",
+      description: "Nous comprenons vos objectifs commerciaux, évaluons votre structure fiscale et identifions les opportunités d'amélioration de la conformité et de l'efficacité opérationnelle.",
       icon: <BiLayer className="w-5 h-5 text-[#f38b0b]" />
     },
     {
       id: "02",
-      title: "Tax & Legal Assessment",
-      description: "Our specialists review financial records, regulatory requirements, and legal obligations to create the most effective strategy for your business.",
+      title: "Évaluation Fiscale & Juridique",
+      description: "Nos spécialistes examinent les dossiers financiers, les exigences réglementaires et les obligations légales pour créer la stratégie la plus efficace pour votre entreprise.",
       icon: <BiSearchAlt className="w-5 h-5 text-[#f38b0b]" />
     },
     {
       id: "03",
-      title: "Strategy & Implementation",
-      description: "We implement customized tax planning, compliance management, and legal solutions designed to minimize risk while supporting sustainable business growth.",
+      title: "Stratégie & Mise en Œuvre",
+      description: "Nous mettons en œuvre une planification fiscale personnalisée, la gestion de la conformité et des solutions juridiques conçues pour minimiser les risques tout en soutenant une croissance durable.",
       icon: <BiSelectMultiple className="w-5 h-5 text-[#f38b0b]" />
     },
     {
       id: "04",
-      title: "Continuous Advisory Support",
-      description: "As regulations evolve, our experts provide ongoing guidance, compliance monitoring, and strategic advice to keep your business protected and future-ready.",
+      title: "Support Conseil Continu",
+      description: "À mesure que les réglementations évoluent, nos experts offrent des conseils continus, un suivi de la conformité et des recommandations stratégiques pour maintenir votre entreprise protégée et prête pour l'avenir.",
       icon: <BiShieldQuarter className="w-5 h-5 text-[#f38b0b]" />
     }
   ];
@@ -121,7 +121,7 @@ function WhyChooseUs() {
           >
             <img
               src="/why-choose-us.jpg"
-              alt="Exceltax Consulting Workflow"
+              alt="Flux de travail de conseil Exceltax"
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />
             {/* Elegant multi-layer overlay for crisp text readability */}
@@ -129,10 +129,10 @@ function WhyChooseUs() {
             
             <div className="absolute bottom-8 left-8 right-8 z-10">
               <span className="text-xs font-bold tracking-widest text-[#f38b0b] uppercase block mb-1">
-                Corporate Synergy
+                Synergie D'Entreprise
               </span>
               <p className="text-white font-medium text-lg leading-snug">
-                Streamlining standard financial compliance workflows into high-yield strategic assets.
+                Transformer les flux de conformité financière standard en actifs stratégiques à haut rendement.
               </p>
             </div>
           </motion.div>

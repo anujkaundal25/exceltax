@@ -2,16 +2,16 @@ import React from "react";
 
 function Footer() {
   const quickLinks = [
-  { label: "Welcome", href: "/" },
-  { label: "Advice", href: "/" },
-  { label: "Exsafe", href: "/" },
-  { label: "Education", href: "/" },
-  { label: "Online Procedure", href: "/" },
-  { label: "JurisFiscal", href: "/" },
-  { label: "Event", href: "/" },
-  { label: "Well-Being", href: "/" },
-  { label: "About", href: "/" },
-];
+    { name: "Accueil", url: "/" },
+    { name: "Conseil", url: "/conseil" },
+    { name: "EXSAFE", url: "/logiciel" },
+    { name: "Education", url: "/education" },
+    { name: "Téléprocédure", url: "/online-procedure" },
+    { name: "JurisFISCAL", url: "/jurisfiscal" },
+    { name: "Evènements", url: "/event" },
+    { name: "BIEN ETRE", url: "/well-being" },
+    { name: "A propos", url: "/about" },
+  ];
 
   const services = [
     { label: "EXCELTAX Conseil", href: "#services" },
@@ -26,7 +26,6 @@ function Footer() {
     <footer className="bg-[#0B1E3A] text-gray-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-
           {/* Company */}
           <div>
             <img
@@ -55,7 +54,7 @@ function Footer() {
                     href={item.href}
                     className="hover:text-[#F4B400] transition-all duration-300"
                   >
-                    {item.label}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -89,12 +88,13 @@ function Footer() {
             </h3>
 
             <div className="space-y-4 text-sm">
-
               <div className="flex gap-3">
                 <span className="text-[#F4B400]">📍</span>
                 <p>
-                  EXCELTAX-NGO NJOH Building<br />
-                  Carrefour BEN DECCA, PK12<br />
+                  EXCELTAX-NGO NJOH Building
+                  <br />
+                  Carrefour BEN DECCA, PK12
+                  <br />
                   Douala, Cameroon
                 </p>
               </div>
@@ -137,17 +137,13 @@ function Footer() {
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-
-          <p>
-            © {new Date().getFullYear()} EXCELTAX. All Rights Reserved.
-          </p>
+          <p>© {new Date().getFullYear()} EXCELTAX. All Rights Reserved.</p>
 
           <div className="flex gap-6">
             <a href="/privacy-policy" className="hover:text-white">
@@ -158,7 +154,6 @@ function Footer() {
               Terms & Conditions
             </a>
           </div>
-
         </div>
       </div>
     </footer>

@@ -18,7 +18,7 @@ function Services() {
       id: 1,
       title: "EXCELT@X Conseil",
       description:
-        "Professional fiscal, accounting, and business consulting services tailored to help organizations stay compliant and improve operational performance.",
+        "Services professionnels de conseil fiscal, comptable et d'entreprise conçus pour aider les organisations à rester conformes et à améliorer leur performance opérationnelle.",
       image: "/services/s1.jpg",
       icon: <BiBriefcaseAlt2 className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -26,7 +26,7 @@ function Services() {
       id: 2,
       title: "EXCELT@X Logi",
       description:
-        "Digital accounting and business management software designed to streamline finance, commercial operations, and administrative workflows.",
+        "Logiciels de comptabilité numérique et de gestion d'entreprise conçus pour rationaliser la finance, les opérations commerciales et les flux administratifs.",
       image: "/services/s2.jpg",
       icon: <BiLaptop className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -34,7 +34,7 @@ function Services() {
       id: 3,
       title: "EXCELT@X Edu",
       description:
-        "Professional training and certification programs in accounting, taxation, finance, business management, and digital skills development.",
+        "Programmes de formation professionnelle et de certification en comptabilité, fiscalité, finance, gestion d'entreprise et développement des compétences numériques.",
       image: "/services/s3.jpg",
       icon: <BiBookReader className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -42,7 +42,7 @@ function Services() {
       id: 4,
       title: "EXCELT@X JuriFiscal",
       description:
-        "Comprehensive legal and tax advisory services to ensure regulatory compliance, risk management, and business protection.",
+        "Services complets de conseil juridique et fiscal pour assurer la conformité réglementaire, la gestion des risques et la protection de l'entreprise.",
       image: "/services/s4.jpg",
       icon: <BiSelectMultiple className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -50,7 +50,7 @@ function Services() {
       id: 5,
       title: "EXCELT@X TéléProcédure",
       description:
-        "Secure online tax filing and administrative procedures that simplify declarations and improve compliance efficiency.",
+        "Téléprocédures fiscales et administratives sécurisées en ligne qui simplifient les déclarations et améliorent l'efficacité de la conformité.",
       image: "/services/s5.jpg",
       icon: <BiFileFind className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -58,7 +58,7 @@ function Services() {
       id: 6,
       title: "EXCELT@X Recouv",
       description:
-        "Debt recovery and receivables management solutions that help businesses improve cash flow and recover outstanding payments.",
+        "Solutions de recouvrement de créances et de gestion du poste client qui aident les entreprises à améliorer leur trésorerie et à récupérer les paiements en souffrance.",
       image: "/services/s6.jpg",
       icon: <BiShieldQuarter className="w-5 h-5 text-[#f38b0b]" />,
     },
@@ -96,16 +96,16 @@ function Services() {
           transition={{ duration: 0.6 }}
         >
           <span className="tracking-widest text-xs md:text-sm font-bold text-[#f38b0b] uppercase mb-3 block">
-            What We Offer
+            Ce Que Nous Proposons
           </span>
 
           <h2 className="text-3xl md:text-4xl font-black text-[#0c2c68] tracking-tight mb-4">
-            Our Professional Services
+            Nos Services Professionnels
           </h2>
 
           <p className="text-gray-500 text-sm md:text-base">
-            Empowering your enterprise with specialized corporate solutions built
-            for modern regulatory landscapes.
+            Donner de la puissance à votre entreprise grâce à des solutions d'entreprise spécialisées
+            adaptées au paysage réglementaire moderne.
           </p>
         </motion.div>
 
@@ -134,7 +134,7 @@ function Services() {
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <button className="bg-[#f38b0b] text-white px-3 py-2 rounded-lg cursor-pointer">
-          View All Services
+          Voir Tous Les Services
         </button>
       </motion.div>
     </section>
@@ -172,7 +172,7 @@ function ServiceCard({ card }) {
 
       <div className="px-1 pt-2 mt-auto border-t border-gray-50 flex items-center justify-between">
         <span className="text-xs font-bold uppercase tracking-wider text-[#0c2c68] group-hover:text-[#f38b0b] transition-colors">
-          Discover Module
+          Découvrir le Module
         </span>
 
         <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-[#0c2c68] group-hover:bg-[#f38b0b] group-hover:text-white transition-all duration-300 shadow-sm">

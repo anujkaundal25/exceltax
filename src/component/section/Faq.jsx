@@ -8,33 +8,33 @@ function Faq() {
   const faqData = [
     {
       id: 1,
-      question: "WHAT SERVICES DOES EXCELTAX PROVIDE?",
-      answer: "ExcelTax provides comprehensive corporate tax assistance, accounting infrastructure setup, financial management consulting, and continuous regulatory compliance guidance tailored to your business goals."
+      question: "QUELS SERVICES FOURNIT EXCELTAX ?",
+      answer: "ExcelTax fournit une assistance fiscale complète aux entreprises, la mise en place d'infrastructures comptables, du conseil en gestion financière et un suivi continu de la conformité réglementaire adaptés à vos objectifs commerciaux."
     },
     {
       id: 2,
-      question: "DO YOU PROVIDE ONGOING COMPLIANCE SUPPORT?",
-      answer: "Yes, we offer dedicated monthly or annual oversight to ensure your ongoing business operations align perfectly with current fiscal policies and regional tax regulations."
+      question: "OFFREZ-VOUS UN ACCOMPAGNEMENT EN CONFORMITÉ CONTINU ?",
+      answer: "Oui, nous proposons une supervision mensuelle ou annuelle dédiée pour garantir que vos opérations commerciales courantes restent parfaitement alignées avec les politiques fiscales et réglementations régionales en vigueur."
     },
     {
       id: 3,
-      question: "HOW DO I GET STARTED WITH YOUR TEAM?",
-      answer: "Getting started is seamless. Simply reach out via our primary contact channels, and our tax specialists will set up an initial consultation to audit your current documentation framework."
+      question: "COMMENT COMMENCER À TRAVAILLER AVEC VOTRE ÉQUIPE ?",
+      answer: "Pour commencer, c'est très simple. Contactez-nous via nos canaux principaux, et nos spécialistes fiscaux organiseront une consultation initiale pour auditer votre structure documentaire actuelle."
     },
     {
       id: 4,
-      question: "CAN YOU HELP WITH COMPLEX TAX CASES?",
-      answer: "Absolutely. Our professional legal and financial partners possess extensive experience handling specialized fiscal litigation, structural corrections, and high-stakes corporate auditing."
+      question: "POUVEZ-VOUS AIDER POUR DES DOSSIERS FISCAUX COMPLEXES ?",
+      answer: "Absolument. Nos partenaires juridiques et financiers bénéficient d'une solide expérience dans la gestion de contentieux fiscaux complexes, de restructurations et d'audits d'entreprise à enjeux majeurs."
     },
     {
       id: 5,
-      question: "DO YOU OFFER SUPPORT FOR SMALL BUSINESSES?",
-      answer: "Yes, we design scalable assistance packages specifically structured to help startups and SMEs establish stable accounting baselines and maintain risk-free filings."
+      question: "PROPOSEZ-VOUS UN ACCOMPAGNEMENT POUR LES PETITES ENTREPRISES ?",
+      answer: "Oui, nous concevons des formules d'assistance évolutives, spécialement structurées pour aider les startups et les PME à établir des bases comptables solides et à maintenir des déclarations sans risque."
     },
     {
       id: 6,
-      question: "HOW SECURE IS MY FINANCIAL DATA?",
-      answer: "Data confidentiality is our top priority. All corporate balance sheets, ledger details, and private financial records are stored using highly secure, encrypted protocols."
+      question: "DANS QUELLE MESURE MES DONNÉES FINANCIÈRES SONT-ELLES SÉCURISÉES ?",
+      answer: "La confidentialité des données est notre priorité absolue. L'ensemble des bilans d'entreprise, des détails de grands livres et des dossiers financiers privés sont stockés selon des protocoles hautement sécurisés et cryptés."
     }
   ];
 
@@ -129,11 +129,11 @@ function Faq() {
           <div className="flex items-center gap-2 mb-4">
             <span className="w-2.5 h-2.5 bg-amber-400 inline-block rounded-sm"></span>
             <span className="text-[10px] font-bold tracking-[0.2em] text-[#0c2c68]">
-              FREQUENTLY ASKED QUESTIONS
+              FOIRE AUX QUESTIONS
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-sky-950 tracking-tight max-w-2xl leading-[1.15]">
-            Answers to your most important questions.
+          <h2 className="text-xl md:text-3xl font-extrabold text-sky-950 tracking-tight max-w-2xl leading-[1.15]">
+            Des réponses à vos questions les plus importantes.
           </h2>
         </motion.div>
 

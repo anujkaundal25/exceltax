@@ -7,15 +7,15 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Welcome", url: "/" },
-    { name: "Advice", url: "/conseil" },
-    { name: "Exsafe", url: "/logiciel" },
+    { name: "Accueil", url: "/" },
+    { name: "Conseil", url: "/conseil" },
+    { name: "EXSAFE", url: "/logiciel" },
     { name: "Education", url: "/education" },
-    { name: "Online Procedure", url: "/online-procedure" },
-    { name: "JurisFiscal", url: "/jurisfiscal" },
-    { name: "Event", url: "/event" },
-    { name: "Well-Being", url: "/well-being" },
-    { name: "About", url: "/about" },
+    { name: "Téléprocédure", url: "/online-procedure" },
+    { name: "JurisFISCAL", url: "/jurisfiscal" },
+    { name: "Evènements", url: "/event" },
+    { name: "BIEN ETRE", url: "/well-being" },
+    { name: "A propos", url: "/about" },
   ];
 
   return (

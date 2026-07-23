@@ -7,19 +7,19 @@ function GetStarted() {
   const stats = [
     {
       value: "999+",
-      label: "Satisfied Clients",
+      label: "Clients Satisfaits",
     },
     {
       value: "456+",
-      label: "Case Finished",
+      label: "Dossiers Traités",
     },
     {
       value: "123+",
-      label: "Team Members",
+      label: "Membres d'Équipe",
     },
     {
       value: "25+",
-      label: "Years Experience",
+      label: "Années d'Expérience",
     },
   ];
 
@@ -91,36 +91,35 @@ function GetStarted() {
           className="block mb-4 text-xs md:text-sm font-black tracking-[3px] uppercase text-[#f38b0b]"
           variants={itemVariants}
         >
-          GET STARTED WITH exceltax 
+          COMMENCEZ AVEC exceltax 
         </motion.span>
 
         <motion.h2 
           className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight max-w-4xl mx-auto mb-6"
           variants={itemVariants}
         >
-          Complete Tax, Legal, and Business Management Solutions
+          Solutions Complètes de Gestion Fiscale, Juridique et d'Entreprise
         </motion.h2>
 
         <motion.p 
           className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-7 sm:leading-8 mb-10 sm:mb-12"
           variants={itemVariants}
         >
-          Optimize your enterprise performance. From specialized corporate
-          advisory and custom digital ERP management software to continuous
-          legal defense, secure online filing operations, and asset recovery
-          systems.
+          Optimisez la performance de votre entreprise. Du conseil d'entreprise spécialisé
+          et des logiciels ERP de gestion numérique sur mesure à la défense juridique continue,
+          aux opérations de télédéclaration sécurisées et aux systèmes de recouvrement de créances.
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5 max-w-xs sm:max-w-none mx-auto" variants={itemVariants}>
           <a href="#contact" className="w-full sm:w-auto">
             <button className="w-full px-8 py-4 rounded-lg bg-[#f38b0b] hover:bg-[#d97b05] text-white font-bold uppercase transition cursor-pointer text-sm sm:text-base">
-              Get Started
+              Commencer
             </button>
           </a>
 
           <a href="#contact" className="w-full sm:w-auto">
             <button className="w-full px-8 py-4 rounded-lg bg-white/10 border border-white/20 text-white backdrop-blur-sm hover:bg-white/20 transition cursor-pointer text-sm sm:text-base">
-              Contact Us
+              Contactez-Nous
             </button>
           </a>
         </motion.div>
