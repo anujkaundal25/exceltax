@@ -70,25 +70,23 @@ function WhyChooseUs() {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-2 h-4 bg-[#f38b0b] rounded-full block animate-pulse" />
-              <span className="tracking-widest text-xs md:text-sm font-black text-sky-700 uppercase">
-                Why Choose Excelt@x?
-              </span>
+                <span className="tracking-widest text-xs md:text-sm font-black text-sky-700 uppercase">
+                  Pourquoi choisir EXCELT@X ?
+                </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-[#0c2c68] tracking-tight leading-[1.15]">
-              A smarter approach to
+              Une approche plus intelligente pour
               <br />
               <span className="bg-gradient-to-r from-[#0c2c68] to-[#f38b0b] bg-clip-text text-transparent">
-                tax & legal excellence.
+                l'excellence fiscale et juridique.
               </span>
             </h2>
           </div>
 
           <div className="lg:col-span-5 border-l-2 border-[#f38b0b]/50 pl-6">
             <p className="text-gray-500 text-sm md:text-base leading-relaxed font-normal">
-              Excelt@x combines tax advisory, legal expertise, and strategic
-              business consulting to help organizations stay compliant,
-              optimize taxation, and make confident business decisions through
-              practical, customized solutions.
+              EXCELT@X réunit conseil fiscal, expertise juridique et stratégie
+              d'entreprise pour accompagner la conformité et optimiser la fiscalité.
             </p>
           </div>
         </motion.div>

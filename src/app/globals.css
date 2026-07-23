@@ -37,3 +37,29 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0;
+}
+
+.goog-te-gadget select {
+  width: 180px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}

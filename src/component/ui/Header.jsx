@@ -1,21 +1,21 @@
-"use client"; // This line fixes the error by enabling React hooks
+"use client";
 
 import React, { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi"; // Note: adjusted path to standard react-icons layout
+import { HiMenu, HiX } from "react-icons/hi";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    "Welcome",
-    "Advice",
-    "Exsafe",
-    "Education",
-    "Online Procedure",
-    "JurisFiscal",
-    "Event",
-    "Well-Being",
-    "About",
+    { name: "Welcome", url: "/" },
+    { name: "Advice", url: "/conseil" },
+    { name: "Exsafe", url: "/exsafe" },
+    { name: "Education", url: "/education" },
+    { name: "Online Procedure", url: "/online-procedure" },
+    { name: "JurisFiscal", url: "/jurisfiscal" },
+    { name: "Event", url: "/event" },
+    { name: "Well-Being", url: "/well-being" },
+    { name: "About", url: "/about" },
   ];
 
   return (
@@ -24,11 +24,12 @@ function Header() {
         {/* Logo */}
         <div className="flex items-center bg-white rounded-lg transition-transform duration-300 hover:scale-[1.02]">
           <a href="/">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="h-10 md:h-12 w-auto object-contain"
-          /></a>
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -36,10 +37,10 @@ function Header() {
           <ul className="flex items-center gap-6 text-base font-semibold">
             {navItems.map((item) => (
               <li
-                key={item}
+                key={item.url}
                 className="relative cursor-pointer py-2 transition-colors duration-300 hover:text-yellow-500 group whitespace-nowrap"
               >
-                {item}
+                <a href={item.url}>{item.name}</a>
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
               </li>
             ))}
@@ -65,7 +66,12 @@ function Header() {
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
           <span className="font-bold text-lg text-gray-400">
             <a href="/">
-            <img src="/logo.png" alt="" className="h-10 md:h-15 w-auto object-contain"/></a>
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="h-10 md:h-15 w-auto object-contain"
+              />
+            </a>
           </span>
           <button
             onClick={() => setIsOpen(false)}
@@ -79,11 +85,13 @@ function Header() {
           <ul className="flex flex-col gap-4 text-lg font-medium">
             {navItems.map((item) => (
               <li
-                key={item}
+                key={item.url}
                 onClick={() => setIsOpen(false)}
                 className="cursor-pointer py-2 px-3 rounded-md hover:bg-gray-50 hover:text-yellow-600 transition-all duration-200"
               >
-                {item}
+                <a href={item.url} className="block w-full">
+                  {item.name}
+                </a>
               </li>
             ))}
           </ul>
