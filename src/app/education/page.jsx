@@ -255,136 +255,134 @@ function page() {
       </main>
 
       <section className="py-16 px-6 sm:px-12 flex items-center justify-center">
-  <div className="max-w-6xl mx-auto w-full space-y-10">
-    {/* Description Block */}
-    <div className="bg-white border border-gray-200 p-8 sm:p-10 rounded-2xl shadow-sm space-y-6">
-      <h2 className="text-orange-500 font-extrabold text-2xl sm:text-3xl tracking-wider uppercase">
-        DIPLÔME DE QUALIFICATION PROFESSIONNELLE (DQP)
-      </h2>
+        <div className="max-w-6xl mx-auto w-full space-y-10">
+          {/* Description Block */}
+          <div className="bg-white border border-gray-200 p-8 sm:p-10 rounded-2xl shadow-sm space-y-6">
+            <h2 className="text-orange-500 font-extrabold text-2xl sm:text-3xl tracking-wider uppercase">
+              DIPLÔME DE QUALIFICATION PROFESSIONNELLE (DQP)
+            </h2>
 
-      <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-        Le{" "}
-        <strong className="text-gray-900 font-semibold">
-          Diplôme de Qualification Professionnelle (DQP)
-        </strong>{" "}
-        est accessible à tous et propose une formation professionnelle sur
-        mesure, alignée avec les exigences du marché du travail. Ce
-        programme offre une immersion totale en entreprise, avec{" "}
-        <strong className="text-gray-900 font-semibold">
-          75% de pratique et 25% de théorie
-        </strong>
-        . Grâce à des programmes élaborés en fonction des besoins réels du
-        terrain, les apprenants sont directement confrontés à la réalité
-        du monde professionnel, incluant un minimum de deux mois de stage
-        en entreprise.
-      </p>
+            <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+              Le{" "}
+              <strong className="text-gray-900 font-semibold">
+                Diplôme de Qualification Professionnelle (DQP)
+              </strong>{" "}
+              est accessible à tous et propose une formation professionnelle sur
+              mesure, alignée avec les exigences du marché du travail. Ce
+              programme offre une immersion totale en entreprise, avec{" "}
+              <strong className="text-gray-900 font-semibold">
+                75% de pratique et 25% de théorie
+              </strong>
+              . Grâce à des programmes élaborés en fonction des besoins réels du
+              terrain, les apprenants sont directement confrontés à la réalité
+              du monde professionnel, incluant un minimum de deux mois de stage
+              en entreprise.
+            </p>
 
-      {/* Action Buttons */}
-      <div className="flex flex-wrap gap-4 pt-2">
-        <a
-          href="#preinscription"
-          className="bg-[#0A192F] hover:bg-[#0D203D] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-md text-sm sm:text-base hover:scale-105"
-        >
-          Préinscription en ligne
-        </a>
-        <a
-          href="#orientation"
-          className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 text-sm sm:text-base hover:scale-105"
-        >
-          Rendez-vous d'orientation
-        </a>
-        <a
-          href="#details"
-          className="border-2 border-red-500 text-red-500 hover:bg-red-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 text-sm sm:text-base hover:scale-105"
-        >
-          Plus de détails
-        </a>
-      </div>
-    </div>
+            {/* Action Buttons */}
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#preinscription"
+                className="bg-[#0A192F] hover:bg-[#0D203D] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-md text-sm sm:text-base hover:scale-105"
+              >
+                Préinscription en ligne
+              </a>
+              <a
+                href="#orientation"
+                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 text-sm sm:text-base hover:scale-105"
+              >
+                Rendez-vous d'orientation
+              </a>
+              <a
+                href="#details"
+                className="border-2 border-red-500 text-red-500 hover:bg-red-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 text-sm sm:text-base hover:scale-105"
+              >
+                Plus de détails
+              </a>
+            </div>
+          </div>
 
-    {/* Section Title for Formations */}
-    <div className="space-y-2">
-      <h3 className="text-gray-900 font-bold text-xl sm:text-2xl">
-        Voici les formations proposées :
-      </h3>
-    </div>
+          {/* Section Title for Formations */}
+          <div className="space-y-2">
+            <h3 className="text-gray-900 font-bold text-xl sm:text-2xl">
+              Voici les formations proposées :
+            </h3>
+          </div>
 
-    {/* Grid of Small Program Boxes */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {/* Box 1 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            CIG
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Comptabilité Informatisée et Gestion
-          </h4>
+          {/* Grid of Small Program Boxes */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Box 1 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  CIG
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">
+                  Comptabilité Informatisée et Gestion
+                </h4>
+              </div>
+            </div>
+
+            {/* Box 2 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  SC
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">
+                  Secrétariat Comptable
+                </h4>
+              </div>
+            </div>
+
+            {/* Box 3 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  SB
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">
+                  Secrétariat Bureautique
+                </h4>
+              </div>
+            </div>
+
+            {/* Box 4 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  SBB
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">
+                  Secrétariat Bureautique Bilingue
+                </h4>
+              </div>
+            </div>
+
+            {/* Box 5 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  WM
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">Webmestre</h4>
+              </div>
+            </div>
+
+            {/* Box 6 */}
+            <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+                  MOAV
+                </span>
+                <h4 className="font-bold text-lg text-gray-900">
+                  Montage Audio Visuel
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* Box 2 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            SC
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Secrétariat Comptable
-          </h4>
-        </div>
-      </div>
-
-      {/* Box 3 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            SB
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Secrétariat Bureautique
-          </h4>
-        </div>
-      </div>
-
-      {/* Box 4 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            SBB
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Secrétariat Bureautique Bilingue
-          </h4>
-        </div>
-      </div>
-
-      {/* Box 5 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            WM
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Webmestre
-          </h4>
-        </div>
-      </div>
-
-      {/* Box 6 */}
-      <div className="bg-white border border-gray-200 p-6 rounded-2xl space-y-3 transform transition-all duration-300 hover:scale-105 hover:border-orange-500/50 hover:shadow-xl cursor-pointer">
-        <div className="space-y-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-500/10 px-3 py-1 rounded-full inline-block">
-            MOAV
-          </span>
-          <h4 className="font-bold text-lg text-gray-900">
-            Montage Audio Visuel
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       <Footer />
     </div>
   );

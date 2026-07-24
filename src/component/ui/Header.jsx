@@ -11,10 +11,10 @@ function Header() {
     { name: "Conseil", url: "/conseil" },
     { name: "EXSAFE", url: "/logiciel" },
     { name: "Education", url: "/education" },
-    { name: "Téléprocédure", url: "/online-procedure" },
+    { name: "Téléprocédure", url: "/teleprocedure" },
     { name: "JurisFISCAL", url: "/jurisfiscal" },
     { name: "Evènements", url: "/event" },
-    { name: "BIEN ETRE", url: "/well-being" },
+    { name: "BIEN ETRE", url: "/bien-etre" },
     { name: "A propos", url: "/about" },
   ];
 
