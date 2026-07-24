@@ -6,7 +6,7 @@ import { FiCheckSquare } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function HeroSection() {
-  const benefits = ["Planification Fiscale", "Conseils Stratégiques", "Assistance en Cas d'Audit"];
+  const benefits = ["Conseils Stratégiques", "Assistance en Cas d'Audit"];
 
   // Framer Motion Variants for cleaner orchestration
   const containerVariants = {
@@ -59,7 +59,7 @@ function HeroSection() {
           animate="visible"
         >
           <motion.span 
-            className="tracking-widest uppercase text-xs md:text-sm font-bold text-yellow-400 uppercase mb-3 block"
+            className="tracking-widest uppercase text-xs md:text-sm font-bold text-[#F68B2D] uppercase mb-3 block"
             variants={itemVariants}
           >
             bienvenue chez exceltax
@@ -69,22 +69,20 @@ function HeroSection() {
             className="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 max-w-2xl bg-gradient-to-r from-white via-white to-gray-200 bg-clip-text text-transparent"
             variants={itemVariants}
           >
-            Confiez Vos Impôts À <br className="hidden sm:inline" />
-            Des Professionnels
+            EXCELTAX BUSINESS INTELLIGENCE GROUP
           </motion.h1>
 
           <motion.p 
             className="text-base md:text-lg text-gray-300 font-light max-w-xl mb-8 leading-relaxed"
             variants={itemVariants}
           >
-            Pharetra adipiscing himenaeos consectetur tempus magna auctor si
-            dictumst potenti.
+            Des solutions intelligentes pour une croissance durable
           </motion.p>
 
           <motion.div className="mb-10" variants={itemVariants}>
             <a href="#contact">
-              <button className="inline-flex items-center gap-2 bg-[#f38b0b] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-300 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
-                Commencer
+              <button className="inline-flex items-center gap-2 bg-[#F68B2D] hover:bg-white hover:text-[#041431] cursor-pointer text-white text-xs md:text-sm font-bold tracking-wider uppercase px-7 py-4 rounded-lg transition-all duration-500 shadow-xl hover:shadow-yellow-500/10 active:scale-98">
+                Contactez-nous
                 <HiArrowUpRight className="text-base stroke-2" />
               </button>
             </a>
@@ -97,7 +95,7 @@ function HeroSection() {
           <motion.div className="flex flex-wrap gap-x-8 gap-y-4" variants={itemVariants}>
             {benefits.map((benefit) => (
               <div key={benefit} className="flex items-center gap-2.5 group">
-                <FiCheckSquare className="text-[#f38b0b] text-xl transition-transform duration-300 group-hover:scale-110" />
+                <FiCheckSquare className="text-[#F68B2D] text-xl transition-transform duration-300 group-hover:scale-110" />
                 <span className="font-semibold text-sm md:text-base tracking-wide text-gray-200">
                   {benefit}
                 </span>

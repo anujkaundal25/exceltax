@@ -19,13 +19,13 @@ function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white text-[#0c2c68] shadow-md transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-[#FFFFFF] text-[#183B63] shadow-md transition-all duration-300 border-b border-[#EEF2F5]">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="flex items-center bg-white rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+        <div className="flex items-center bg-[#FFFFFF] rounded-lg transition-transform duration-300 hover:scale-[1.02]">
           <a href="/">
             <img
-              src="/logo.png"
+              src="/new-logo.png"
               alt="Logo"
               className="h-10 md:h-12 w-auto object-contain"
             />
@@ -38,10 +38,10 @@ function Header() {
             {navItems.map((item) => (
               <li
                 key={item.url}
-                className="relative cursor-pointer py-2 transition-colors duration-300 hover:text-yellow-500 group whitespace-nowrap"
+                className="relative cursor-pointer py-2 text-[#183B63] transition-colors duration-300 hover:text-[#F68B2D] group whitespace-nowrap"
               >
                 <a href={item.url}>{item.name}</a>
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#F68B2D] transition-all duration-300 group-hover:w-full"></span>
               </li>
             ))}
           </ul>
@@ -50,7 +50,7 @@ function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="xl:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200 focus:outline-none"
+          className="xl:hidden p-2 rounded-md text-[#183B63] hover:bg-[#EEF2F5] transition-colors duration-200 focus:outline-none"
           aria-label="Toggle Menu"
         >
           {isOpen ? <HiX className="h-7 w-7" /> : <HiMenu className="h-7 w-7" />}
@@ -59,12 +59,12 @@ function Header() {
 
       {/* Mobile Drawer Overlay */}
       <div
-        className={`fixed inset-y-0 right-0 z-40 w-full max-w-sm bg-white shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden ${
+        className={`fixed inset-y-0 right-0 z-40 w-full max-w-sm bg-[#FFFFFF] shadow-2xl transform transition-transform duration-300 ease-in-out xl:hidden border-l border-[#EEF2F5] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-          <span className="font-bold text-lg text-gray-400">
+        <div className="flex items-center justify-between px-6 py-5 border-b border-[#EEF2F5]">
+          <span className="font-bold text-lg text-[#404040]">
             <a href="/">
               <img
                 src="/logo.png"
@@ -75,19 +75,19 @@ function Header() {
           </span>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-2 rounded-md hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-md text-[#183B63] hover:bg-[#EEF2F5] transition-colors"
           >
             <HiX className="h-6 w-6" />
           </button>
         </div>
 
         <nav className="px-6 py-6 h-full overflow-y-auto">
-          <ul className="flex flex-col gap-4 text-lg font-medium">
+          <ul className="flex flex-col gap-3 text-lg font-medium">
             {navItems.map((item) => (
               <li
                 key={item.url}
                 onClick={() => setIsOpen(false)}
-                className="cursor-pointer py-2 px-3 rounded-md hover:bg-gray-50 hover:text-yellow-600 transition-all duration-200"
+                className="cursor-pointer py-2.5 px-3 rounded-lg text-[#183B63] hover:bg-[#EEF2F5] hover:text-[#F68B2D] transition-all duration-200"
               >
                 <a href={item.url} className="block w-full">
                   {item.name}
@@ -101,7 +101,7 @@ function Header() {
       {/* Mobile Background Dimmer Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-30 bg-black/40 xl:hidden backdrop-blur-xs"
+          className="fixed inset-0 z-30 bg-[#183B63]/40 xl:hidden backdrop-blur-xs"
           onClick={() => setIsOpen(false)}
         />
       )}

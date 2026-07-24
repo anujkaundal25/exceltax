@@ -52,11 +52,9 @@ function Approach() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Notre Démarche</h3>
-          <p className="text-[#0c2c68]">
-            En agissant à la fois comme conseiller fiscal et avocat de votre entreprise, et en adoptant
-            une vision systémique de votre activité (Approche Guichet Unique),
-            notre objectif est de :
+          <h3 className="text-xl font-semibold mb-2 text-[#F68B2D]">NOTRE AMBITION</h3>
+          <p className="text-[#183B63]">
+            Faire d'EXCELTAX le partenaire de référence de la transformation numérique, de la conformité réglementaire et de la performance des organisations en Afrique
           </p>
         </motion.div>
 
@@ -81,11 +79,9 @@ function Approach() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <h3 className="text-xl font-semibold mb-2 text-[#f38b0b]">Notre Démarche</h3>
-              <p className="text-[#0c2c68]">
-                En agissant à la fois comme conseiller fiscal et avocat de votre entreprise, et en
-                adoptant une vision systémique de votre activité (Approche
-                Guichet Unique), notre objectif est de :
+              <h3 className="text-lg font-semibold mb-2 text-[#f38b0b]">NOTRE AMBITION</h3>
+              <p className="text-[#0c2c68] text-sm">
+                Faire d'EXCELTAX le partenaire de référence de la transformation numérique, de la conformité réglementaire et de la performance des organisations en Afrique
               </p>
             </motion.div>
           </motion.div>
@@ -99,50 +95,29 @@ function Approach() {
           animate="visible"
         >
           <motion.h2 
-            className="text-3xl sm:text-4xl font-extrabold text-[#0c2c68] leading-tight mb-6"
+            className="text-3xl sm:text-4xl font-extrabold text-[#183B63] leading-tight mb-6"
             variants={fadeInUp}
           >
-            Une Solution Guichet Unique pour la Réussite de Votre Entreprise
+            QUI SOMMES-NOUS ?
           </motion.h2>
 
           <motion.p 
-            className="text-gray-600 leading-relaxed mb-8 text-base md:text-lg"
+            className="text-black leading-relaxed mb-8 text-base md:text-lg"
             variants={fadeInUp}
           >
-            En agissant à la fois comme conseiller fiscal et partenaire juridique de votre entreprise,
-            tout en adoptant une vue d'ensemble de votre activité, nous proposons une approche
-            Guichet Unique qui simplifie les questions financières et juridiques complexes.
+            EXCELTAX Business Intelligence Group est un groupe africain de conseil, de technologies et de formation qui accompagne les entreprises, les administrations, les institutions financières, les organisations internationales et les investisseurs dans leur transformation stratégique, digitale et réglementaire.
           </motion.p>
 
-          {/* Feature List */}
-          <motion.div className="grid sm:grid-cols-2 gap-6" variants={fadeInUp}>
-            {features.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={index}
-                  className="p-5 bg-gray-50/60 border border-gray-100 rounded-xl shadow-xs shadow-[#0c2c68] hover:shadow-md transition-all duration-300 group flex flex-col gap-4"
-                >
-                  <div className="w-10 h-10 shrink-0 bg-[#f38b0b]/10 flex items-center justify-center rounded-lg transition-transform duration-300 group-hover:scale-105">
-                    <Icon className="text-[#f38b0b] text-xl" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-base font-bold text-gray-950 mb-1.5 leading-snug">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </motion.div>
+          <motion.p 
+            className="text-black leading-relaxed mb-8 text-base md:text-lg"
+            variants={fadeInUp}
+          >
+            Aujourd'hui, EXCELTAX est organisé autour de cinq pôles complémentaires qui couvrent l'ensemble des besoins de gouvernance, de gestion, de conformité et de développement des entreprises.
+          </motion.p>
 
           {/* CTA Action Button */}
-          <motion.div className="mt-10" variants={fadeInUp}>
-            <button className="px-8 py-3.5 bg-[#0c2c68] hover:bg-black text-white font-semibold text-sm tracking-wide rounded-lg transition-all duration-300 shadow-md active:scale-98 cursor-pointer">
+          <motion.div className="mt-5" variants={fadeInUp}>
+            <button className="px-8 py-3.5 bg-[#183B63] hover:bg-black text-white font-semibold text-sm tracking-wide rounded-lg transition-all duration-300 shadow-md active:scale-98 cursor-pointer">
               En Savoir Plus
             </button>
           </motion.div>
