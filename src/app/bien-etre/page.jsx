@@ -327,7 +327,7 @@ export default function Page() {
         </section>
 
         {/* SECTION 5 — POURQUOI CHOISIR EXCELTAX ? */}
-        <section className="bg-[#183B63] text-white py-20 px-6 md:px-16 lg:px-24">
+        <section className="bg-[#183B63] text-white py-20 px-6 md:px-16 lg:px-24 mb-10">
           <motion.div 
             initial="hidden"
             whileInView="show"
