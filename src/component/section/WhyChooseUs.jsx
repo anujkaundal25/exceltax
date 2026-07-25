@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import { 
-  BiGlobe, 
-  BiMapAlt, 
-  BiRocket, 
-  BiCheckCircle, 
-  BiTrendingUp 
+import {
+  BiGlobe,
+  BiMapAlt,
+  BiRocket,
+  BiCheckCircle,
+  BiTrendingUp,
+  BiRightArrowAlt,
 } from "react-icons/bi";
 import { motion } from "framer-motion";
 
@@ -23,21 +24,16 @@ function WhyChooseUs() {
         "Formation",
         "Intelligence artificielle",
         "Documentation",
-        "Assistance opérationnelle"
+        "Assistance opérationnelle",
       ],
-      icon: <BiGlobe className="w-5 h-5 text-[#F68B2D]" />
+      icon: <BiGlobe className="w-5 h-5 text-[#F68B2D]" />,
     },
     {
       id: "02",
       title: "Une expertise africaine",
       subtitle: "Des solutions conçues spécifiquement pour les réalités de :",
-      items: [
-        "L'OHADA",
-        "La CEMAC",
-        "Le Cameroun",
-        "Les marchés africains"
-      ],
-      icon: <BiMapAlt className="w-5 h-5 text-[#F68B2D]" />
+      items: ["L'OHADA", "La CEMAC", "Le Cameroun", "Les marchés africains"],
+      icon: <BiMapAlt className="w-5 h-5 text-[#F68B2D]" />,
     },
     {
       id: "03",
@@ -46,196 +42,140 @@ function WhyChooseUs() {
       transformations: [
         { from: "du papier", to: "au numérique" },
         { from: "des traitements manuels", to: "à l'automatisation" },
-        { from: "des données dispersées", to: "au pilotage intelligent" }
+        { from: "des données dispersées", to: "au pilotage intelligent" },
       ],
-      icon: <BiRocket className="w-5 h-5 text-[#F68B2D]" />
-    }
+      icon: <BiRocket className="w-5 h-5 text-[#F68B2D]" />,
+    },
   ];
 
-  const columnVariants = {
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, x: 30 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
 
   return (
-    <section className="py-24 px-6 lg:px-20 bg-[#EEF2F5] relative overflow-hidden">
-      {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#A9B4C01A_1px,transparent_1px),linear-gradient(to_bottom,#A9B4C01A_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
-      
+    <section className="relative py-28 px-6 lg:px-20 bg-[#183B63] text-[#FFFFFF] overflow-hidden">
+      {/* Background Subtle Glow Elements */}
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-[#2E5D8A]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#F68B2D]/10 rounded-full blur-3xl pointer-events-none" />
+
       <div className="max-w-7xl mx-auto relative z-10">
-
-        {/* Header */}
-        <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-          <div className="lg:col-span-7">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="w-2 h-4 bg-[#F68B2D] rounded-full block animate-pulse" />
-              <span className="tracking-widest text-xs md:text-sm font-black text-[#2E5D8A] uppercase">
-                POURQUOI CHOISIR EXCELTAX ?
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black text-[#183B63] tracking-tight leading-[1.15]">
-              Partenaire stratégique de votre
-              <br />
-              <span className="bg-gradient-to-r from-[#183B63] to-[#F68B2D] bg-clip-text text-transparent">
-                performance et conformité.
-              </span>
-            </h2>
-          </div>
-
-          <div className="lg:col-span-5 border-l-2 border-[#F68B2D]/50 pl-6">
-            <p className="text-[#404040] text-sm md:text-base leading-relaxed font-normal">
-              EXCELTAX réunit expertise sectorielle, maîtrise réglementaire locale et innovations technologiques pour propulser le développement de votre organisation.
-            </p>
-          </div>
-        </motion.div>
-
-        {/* Main Bento Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-
-          {/* Pillar 01: Approche Globale */}
-          <motion.div 
-            className="bg-[#FFFFFF] border border-[#A9B4C0]/30 rounded-3xl p-6 shadow-sm flex flex-col justify-between"
-            variants={columnVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.div variants={itemVariants} className="h-full">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-2xl font-black text-[#A9B4C0] tracking-tight font-mono">
-                  {pillars[0].id}
-                </span>
-                <div className="w-9 h-9 rounded-xl bg-[#EEF2F5] flex items-center justify-center border border-[#A9B4C0]/20 shadow-xs">
-                  {pillars[0].icon}
-                </div>
-              </div>
-
-              <h3 className="text-xl font-bold text-[#183B63] mb-2 tracking-tight">
-                {pillars[0].title}
-              </h3>
-              <p className="text-[#404040] text-xs mb-4 font-medium">
-                {pillars[0].subtitle}
-              </p>
-
-              <div className="grid grid-cols-1 gap-2">
-                {pillars[0].items.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-[#404040] text-sm bg-[#EEF2F5]/80 p-2.5 rounded-xl border border-[#A9B4C0]/20">
-                    <BiCheckCircle className="text-[#F68B2D] shrink-0 w-4 h-4" />
-                    <span className="font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Center Showcase Image Container */}
-          <motion.div 
-            className="relative overflow-hidden rounded-3xl min-h-[400px] lg:min-h-full group shadow-lg border border-[#A9B4C0]/30 flex items-stretch"
-            initial={{ opacity: 0, scale: 0.98 }}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Side: Side-by-side Heading & Graphic alignment fix */}
+          <motion.div
+            className="lg:col-span-5 flex flex-col justify-center relative min-h-[480px]"
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <img
-              src="/why-choose-us.jpg"
-              alt="Expertise EXCELTAX"
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#183B63]/90 via-[#183B63]/40 to-transparent" />
-            
-            <div className="absolute bottom-8 left-8 right-8 z-10">
-              <span className="text-xs font-bold tracking-widest text-[#F68B2D] uppercase block mb-1">
-                L'Excellence Opérationnelle
-              </span>
-              <p className="text-[#FFFFFF] font-medium text-lg leading-snug">
-                Allier vision panafricaine et transformation numérique pour sécuriser et accélérer votre croissance.
-              </p>
+            <div className="flex flex-col items-start select-none">
+              <div className="mb-8">
+                <span className="tracking-widest text-xs font-black text-[#F68B2D] uppercase block mb-2">
+                  POURQUOI CHOISIR EXCELTAX ?
+                </span>
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#FFFFFF] leading-snug">
+                  Partenaire stratégique de votre performance.
+                </h2>
+              </div>
+              <div className="w-full flex justify-center lg:justify-start">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/050/230/752/small_2x/white-3d-question-mark-on-a-transparent-background-free-png.png"
+                  alt="Question mark"
+                  className="h-[350px] object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-110"
+                />
+              </div>
             </div>
           </motion.div>
 
-          {/* Right Column (Pillars 02 & 03) */}
-          <motion.div 
-            className="flex flex-col justify-between gap-8"
-            variants={columnVariants}
+          {/* Right Side: Modern Glassmorphic Cards */}
+          <motion.div
+            className="lg:col-span-7 flex flex-col gap-6"
+            variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            {/* Pillar 02: Expertise Africaine */}
-            <motion.div variants={itemVariants} className="bg-[#FFFFFF] border border-[#A9B4C0]/30 rounded-3xl p-6 shadow-sm flex-1">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-2xl font-black text-[#A9B4C0] tracking-tight font-mono">
-                  {pillars[1].id}
-                </span>
-                <div className="w-9 h-9 rounded-xl bg-[#EEF2F5] flex items-center justify-center border border-[#A9B4C0]/20 shadow-xs">
-                  {pillars[1].icon}
+            {pillars.map((pillar, idx) => (
+              <motion.div
+                key={idx}
+                variants={itemVariants}
+                className="flex items-center gap-4 group"
+              >
+                {/* Arrow Indicator Pointer */}
+                <div className="hidden sm:flex items-center justify-center w-8 h-8 rounded-full bg-[#EEF2F5]/10 text-[#FFFFFF] shrink-0 group-hover:translate-x-1 transition-transform">
+                  <BiRightArrowAlt className="w-5 h-5 text-[#F68B2D]" />
                 </div>
-              </div>
 
-              <h3 className="text-xl font-bold text-[#183B63] mb-1 tracking-tight">
-                {pillars[1].title}
-              </h3>
-              <p className="text-[#404040] text-xs mb-3 font-medium">
-                {pillars[1].subtitle}
-              </p>
+                {/* Content Card */}
+                <div className="flex-1 bg-[#2E5D8A]/50 backdrop-blur-xl rounded-2xl p-6 md:p-8 shadow-2xl flex items-center justify-between border border-[#EEF2F5]/15 border-l-4 border-l-[#F68B2D] relative overflow-hidden transition-all duration-300 hover:border-[#F68B2D]/50 hover:bg-[#2E5D8A]/70">
+                  <div className="flex-1 pr-4">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#EEF2F5]/70">
+                        {pillar.id} / {pillar.title}
+                      </span>
+                    </div>
 
-              <div className="flex flex-wrap gap-2">
-                {pillars[1].items.map((item, idx) => (
-                  <span key={idx} className="bg-[#2E5D8A]/10 text-[#2E5D8A] font-semibold text-xs px-3 py-1.5 rounded-lg border border-[#2E5D8A]/20">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
+                    <h3 className="text-xl md:text-2xl font-bold text-[#FFFFFF] mb-1 tracking-tight">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-[#EEF2F5]/90 text-xs md:text-sm mb-4 font-normal">
+                      {pillar.subtitle}
+                    </p>
 
-            {/* Pillar 03: Transformation Digitale */}
-            <motion.div variants={itemVariants} className="bg-[#FFFFFF] border border-[#A9B4C0]/30 rounded-3xl p-6 shadow-sm flex-1">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-2xl font-black text-[#A9B4C0] tracking-tight font-mono">
-                  {pillars[2].id}
-                </span>
-                <div className="w-9 h-9 rounded-xl bg-[#EEF2F5] flex items-center justify-center border border-[#A9B4C0]/20 shadow-xs">
-                  {pillars[2].icon}
-                </div>
-              </div>
+                    {pillar.items && (
+                      <div className="flex flex-wrap gap-2">
+                        {pillar.items.map((item, itemIdx) => (
+                          <span
+                            key={itemIdx}
+                            className="bg-[#183B63]/60 text-[#FFFFFF] text-xs px-3 py-1.5 rounded-lg font-medium backdrop-blur-sm border border-[#EEF2F5]/10 flex items-center gap-1.5"
+                          >
+                            <BiCheckCircle className="text-[#F68B2D] shrink-0 w-3.5 h-3.5" />
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    )}
 
-              <h3 className="text-xl font-bold text-[#183B63] mb-1 tracking-tight">
-                {pillars[2].title}
-              </h3>
-              <p className="text-[#404040] text-xs mb-3 font-medium">
-                {pillars[2].subtitle}
-              </p>
-
-              <div className="space-y-2">
-                {pillars[2].transformations.map((t, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-xs bg-[#EEF2F5] p-2 rounded-xl">
-                    <span className="text-[#A9B4C0] line-through capitalize">{t.from}</span>
-                    <BiTrendingUp className="text-[#F68B2D] shrink-0" />
-                    <span className="font-bold text-[#183B63] capitalize">{t.to}</span>
+                    {pillar.transformations && (
+                      <div className="space-y-2">
+                        {pillar.transformations.map((t, tIdx) => (
+                          <div
+                            key={tIdx}
+                            className="flex items-center gap-2 text-xs bg-[#183B63]/60 px-3 py-2 rounded-xl backdrop-blur-sm border border-[#EEF2F5]/10 text-[#FFFFFF]"
+                          >
+                            <span className="text-[#A9B4C0] line-through capitalize font-medium">
+                              {t.from}
+                            </span>
+                            <BiTrendingUp className="text-[#F68B2D] shrink-0" />
+                            <span className="font-bold text-[#FFFFFF] capitalize">
+                              {t.to}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                ))}
-              </div>
-            </motion.div>
+
+                  <div className="hidden sm:flex shrink-0 w-16 h-16 rounded-2xl bg-[#183B63]/70 border border-[#EEF2F5]/20 items-center justify-center backdrop-blur-md shadow-inner">
+                    {pillar.icon}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
 
         </div>

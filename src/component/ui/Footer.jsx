@@ -106,14 +106,14 @@ function Footer() {
                     href="tel:+237652521717"
                     className="hover:text-[#FFFFFF] transition-colors block"
                   >
-                    +237 652 521 717
+                    237 652 521 717
                   </a>
 
                   <a
                     href="tel:+237656561508"
                     className="hover:text-[#FFFFFF] transition-colors block"
                   >
-                    +237 656 561 508
+                    237 656 561 508
                   </a>
                 </div>
               </div>
