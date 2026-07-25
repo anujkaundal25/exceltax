@@ -15,7 +15,7 @@ function Header() {
     { name: "JurisFISCAL", url: "/jurisfiscal" },
     { name: "Evènements", url: "/event" },
     { name: "BIEN ETRE", url: "/bien-etre" },
-    { name: "A propos", url: "/about" },
+    { name: "A propos", url: "/apropos" },
   ];
 
   return (
