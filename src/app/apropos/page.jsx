@@ -88,25 +88,17 @@ export default function Page() {
                 entreprises
               </h2>
               <p className="text-base text-[#404040] leading-relaxed font-medium">
-                Fondé avec l'ambition de devenir un leader africain de la
-                Business Intelligence, EXCELTAX réunit une expertise
-                multidisciplinaire en conseil, accompagnement juridique et
-                fiscal, technologies numériques et formation professionnelle.
+                EXCELTAX Business Intelligence Group est un groupe africain de
+                conseil, de technologies et de formation qui accompagne les
+                entreprises, les administrations, les institutions financières,
+                les organisations internationales et les investisseurs dans leur
+                transformation stratégique, digitale et réglementaire.
               </p>
               <p className="text-sm text-[#404040] leading-relaxed">
-                Notre approche intégrée permet à nos clients de relever des
-                défis complexes, d'améliorer leur efficacité opérationnelle,
-                d'assurer leur conformité réglementaire et d'accélérer une
-                croissance durable. Chaque solution que nous proposons est
-                conçue sur mesure afin de répondre aux besoins spécifiques de
-                nos clients tout en conciliant les meilleures pratiques
-                internationales et les réalités locales.
-              </p>
-              <p className="text-sm text-[#404040] leading-relaxed">
-                Qu'il s'agisse d'accompagner une startup, une multinationale,
-                une institution publique ou une organisation internationale,
-                notre objectif reste le même : produire des résultats concrets
-                grâce au savoir, à l'innovation et à la collaboration.
+                Aujourd'hui, EXCELTAX est organisé autour de cinq pôles
+                complémentaires qui couvrent l'ensemble des besoins de
+                gouvernance, de gestion, de conformité et de développement des
+                entreprises.
               </p>
             </motion.div>
             <motion.div
