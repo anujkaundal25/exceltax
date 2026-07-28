@@ -25,10 +25,14 @@ function Header() {
       name: "EXSAFE",
       url: "/logiciel",
       children: [
-        { name: "Présentation", url: "/logiciel" },
-        { name: "Modules", url: "/logiciel/modules" },
-        { name: "ERP Cloud", url: "/logiciel/erp-cloud" },
-        { name: "Demander une Démo", url: "/logiciel/demo" },
+        { name: "EXCELT@X ODA COMPTA PRO", url: "/logiciel/logiodacomptapro" },
+        { name: "EXCELT@X ODA PROVIDE PRO", url: "/logiciel/logiodacomptaaprovide" },
+        { name: "EXCELT@X ODA COMPTA PRO EBNL", url: "/logiciel/logiodacomptaproebnl" },
+        { name: "EXCELT@X ODA GESCOM", url: "/logiciel/xlogiodagescom" },
+        { name: "EXCELT@X ODA IMMOB", url: "/logiciel/xlogiodaimmob" },
+        { name: "EXCELT@X EXSAFE MANAGER 360", url: "/logiciel/exsafe" },
+        { name: "Essayer la version démo", url: "/logiciel/demander-assistance" },
+        { name: "Télécharger la fiche de prix et d'information", url: "/logiciel/tarifs" },
       ],
     },
     {
@@ -107,15 +111,18 @@ function Header() {
                 </div>
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#F68B2D] transition-all duration-300 group-hover:w-full"></span>
 
-                {/* Desktop Dropdown Menu */}
+                {/* Desktop Dropdown Menu - Increased width from w-56 to w-80 */}
                 {item.children && (
-                  <div className="absolute top-full left-0 hidden group-hover:block pt-2 w-56">
+                  <div className="absolute top-full left-0 hidden group-hover:block pt-2 w-80">
                     <ul className="bg-white rounded-xl shadow-xl border border-[#EEF2F5] py-2 flex flex-col gap-1">
-                      {item.children.map((child) => (
-                        <li key={child.url} className="px-4 py-2 hover:bg-[#EEF2F5] transition-colors">
+                      {item.children.map((child, idx) => (
+                        <li
+                          key={`${child.url}-${idx}`}
+                          className="px-4 py-2 hover:bg-[#EEF2F5] transition-colors"
+                        >
                           <a
                             href={child.url}
-                            className="block text-sm font-normal text-[#183B63] hover:text-[#F68B2D]"
+                            className="block text-sm font-normal text-[#183B63] hover:text-[#F68B2D] whitespace-normal leading-snug"
                           >
                             {child.name}
                           </a>
@@ -151,7 +158,7 @@ function Header() {
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="h-10 md:h-15 w-auto object-contain"
+                className="h-10 md:h-12 w-auto object-contain"
               />
             </a>
           </span>
@@ -163,7 +170,7 @@ function Header() {
           </button>
         </div>
 
-        <nav className="px-6 py-6 h-full overflow-y-auto">
+        <nav className="px-6 py-6 h-[calc(100vh-80px)] overflow-y-auto">
           <ul className="flex flex-col gap-2 text-lg font-medium">
             {navItems.map((item) => (
               <li key={item.url} className="flex flex-col">
@@ -195,8 +202,8 @@ function Header() {
                 {/* Mobile Submenu Accordion */}
                 {item.children && mobileOpenSubmenu === item.name && (
                   <ul className="flex flex-col pl-4 py-1 gap-1 border-l-2 border-[#EEF2F5] ml-3 my-1">
-                    {item.children.map((child) => (
-                      <li key={child.url}>
+                    {item.children.map((child, idx) => (
+                      <li key={`${child.url}-${idx}`}>
                         <a
                           href={child.url}
                           onClick={() => setIsOpen(false)}
@@ -217,7 +224,7 @@ function Header() {
       {/* Mobile Background Dimmer Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-30 bg-[#183B63]/40 xl:hidden backdrop-blur-xs"
+          className="fixed inset-0 z-30 bg-[#183B63]/40 xl:hidden backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         />
       )}

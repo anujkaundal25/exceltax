@@ -25,14 +25,6 @@ const services = [
         "title": "Je suis votre Conseil Fiscal Agréé CEMAC",
         "description": "Le Conseil Fiscal Agréé CEMAC est un professionnel ou une entité habilité(e) à exercer la profession de conseil fiscal dans l'espace de la Communauté Économique et Monétaire de l'Afrique Centrale (CEMAC). Cette profession est régie par un règlement communautaire adopté pour harmoniser la pratique du conseil fiscal au sein des États membres (Cameroun, Congo, Gabon, Tchad, Guinée Équatoriale, Centrafrique).",
         "image": "/conseil-services/fiscalite.webp",
-        "highlights": [
-          "Planification fiscale stratégique",
-          "Conformité réglementaire",
-          "Conseil fiscal aux entreprises",
-          "Évaluation des risques",
-          "Optimisation fiscale",
-          "Solutions axées sur les affaires"
-        ]
       },
       {
         "id": 2,
@@ -92,27 +84,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi les entreprises font confiance à EXCELTAX Fiscalité",
-        "description": "Notre approche associe expertise technique, connaissance réglementaire et expérience pratique des affaires pour obtenir des résultats mesurables. Nous aidons les organisations à réduire les risques de non-conformité, à optimiser leurs performances fiscales et à bâtir une confiance à long terme dans leur gestion financière.",
-        "benefits": [
-          "Consultants fiscaux expérimentés",
-          "Expertise sectorielle spécifique",
-          "Conformité réglementaire totale",
-          "Stratégies fiscales sur mesure",
-          "Processus de conseil transparent",
-          "Partenariat commercial à long terme",
-          "Soutien aux PME et grandes entreprises",
-          "Expertise fiscale transfrontalière"
-        ],
-        "cta": {
-          "title": "Construisez une stratégie fiscale plus solide",
-          "description": "Associez-vous à EXCELTAX Fiscalité pour garantir la conformité, réduire les risques fiscaux et créer une stratégie financière durable qui soutient la croissance de votre organisation.",
-          "buttonText": "Parlez avec nos experts",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   },
   {
@@ -208,27 +179,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi choisir EXCELTAX Comptabilité",
-        "description": "Nous combinons expertise comptable, technologies modernes et approche axée sur le client pour aider les organisations à améliorer leur gestion financière, à renforcer leur conformité et à atteindre une croissance durable.",
-        "benefits": [
-          "Professionnels de la comptabilité expérimentés",
-          "Rapports financiers fiables",
-          "Tenue de livres précise",
-          "Conformité aux normes comptables",
-          "Solutions financières sur mesure",
-          "Amélioration de la prise de décision",
-          "Gestion sécurisée des données financières",
-          "Soutien aux entreprises à long terme"
-        ],
-        "cta": {
-          "title": "Renforcez votre gestion financière",
-          "description": "Associez-vous à EXCELTAX Comptabilité pour améliorer l'exactitude financière, stimuler la performance de l'entreprise et bâtir un avenir financier plus solide.",
-          "buttonText": "Parlez avec nos experts",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   },
   {
@@ -324,27 +274,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi choisir EXCELTAX Social",
-        "description": "Nous combinons expertise RH, connaissance du droit du travail et expérience pratique des affaires pour aider les organisations à bâtir des milieux de travail conformes, efficaces et performants.",
-        "benefits": [
-          "Services de paie professionnels",
-          "Expertise en droit du travail",
-          "Conformité en matière d'emploi",
-          "Solutions RH personnalisées",
-          "Réduction des risques opérationnels",
-          "Amélioration de la gestion du personnel",
-          "Administration confidentielle des employés",
-          "Partenariat RH à long terme"
-        ],
-        "cta": {
-          "title": "Construisez une main-d'œuvre plus forte",
-          "description": "Associez-vous à EXCELTAX Social pour simplifier la gestion des ressources humaines, garantir la conformité en matière d'emploi et créer un environnement de travail productif.",
-          "buttonText": "Parlez avec nos experts",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   },
   {
@@ -440,27 +369,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi choisir EXCELTAX DSF",
-        "description": "Nos professionnels de la comptabilité et de la fiscalité expérimentés veillent à ce que vos déclarations annuelles soient complétées avec précision, soumises dans les délais et entièrement conformes aux réglementations applicables.",
-        "benefits": [
-          "Spécialistes DSF expérimentés",
-          "Expertise en comptabilité OHADA",
-          "Rapports financiers précis",
-          "Risques de conformité réduits",
-          "Soumission dans les délais",
-          "Processus de révision professionnel",
-          "Conseil axé sur les affaires",
-          "Soutien réglementaire continu"
-        ],
-        "cta": {
-          "title": "Assurez le succès de votre dépôt de DSF",
-          "description": "Faites confiance à EXCELTAX DSF pour préparer vos déclarations financières annuelles avec exactitude, efficacité et conformité réglementaire totale.",
-          "buttonText": "Commencez dès aujourd'hui",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   },
   {
@@ -556,27 +464,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi choisir EXCELTAX Fiscalo-Comptable",
-        "description": "Notre approche intégrée élimine le fossé entre la comptabilité et la fiscalité, offrant aux organisations des informations financières précises, une meilleure conformité et une prise de décision stratégique optimisée.",
-        "benefits": [
-          "Expertise financière intégrée",
-          "Comptabilité et reporting précis",
-          "Conseil fiscal professionnel",
-          "Gouvernance financière améliorée",
-          "Suivi des performances de l'entreprise",
-          "Conformité réglementaire",
-          "Solutions financières personnalisées",
-          "Partenariat stratégique à long terme"
-        ],
-        "cta": {
-          "title": "Transformez votre gestion financière",
-          "description": "Associez-vous à EXCELTAX Fiscalo-Comptable pour simplifier la gestion financière, renforcer la conformité et soutenir la croissance durable de votre entreprise.",
-          "buttonText": "Parlez à nos experts",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   },
   {
@@ -672,27 +559,6 @@ const services = [
           }
         ]
       },
-      {
-        "id": 4,
-        "title": "Pourquoi choisir EXCELTAX Recouvrement",
-        "description": "Nos professionnels du recouvrement expérimentés combinent expertise en négociation, connaissances financières et compréhension juridique pour aider les organisations à recouvrer leurs créances en souffrance de manière efficace tout en minimisant les perturbations opérationnelles.",
-        "benefits": [
-          "Spécialistes professionnels du recouvrement",
-          "Pratiques de collecte éthiques",
-          "Amélioration de la trésorerie",
-          "Réduction des créances en souffrance",
-          "Stratégies de recouvrement sur mesure",
-          "Préservation des relations d'affaires",
-          "Expertise juridique et financière",
-          "Gestion confidentielle des dossiers"
-        ],
-        "cta": {
-          "title": "Recouvrez vos paiements en souffrance",
-          "description": "Associez-vous à EXCELTAX Recouvrement pour améliorer votre trésorerie, réduire les risques financiers et recouvrer vos créances impayées grâce à des solutions professionnelles et efficaces.",
-          "buttonText": "Parlez avec nos experts en recouvrement",
-          "buttonLink": "/contact"
-        }
-      }
     ]
   }
 ];
