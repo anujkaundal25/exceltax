@@ -34,10 +34,10 @@ export default async function Page({ params }) {
             src={page.hero.image}
             alt={page.title}
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-[#183B63]/85" />
+          <div className="absolute inset-0 bg-[#183B63]/80" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col justify-center items-center text-center">
@@ -51,9 +51,9 @@ export default async function Page({ params }) {
             <p className="text-xl text-[#F68B2D] font-medium">
               {page.hero.subtitle}
             </p>
-            <p className="text-[#A9B4C0] text-lg leading-relaxed">
+            {/* <p className="text-[#A9B4C0] text-lg leading-relaxed">
               {page.hero.description}
-            </p>
+            </p> */}
             <div className="flex flex-wrap justify-center gap-4 pt-4">
               <Link
                 href={page.hero.primaryButton.url}

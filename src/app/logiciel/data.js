@@ -2,14 +2,14 @@ const logiciel = [
   {
     title: "EXCELT@X ODA COMPTA PRO",
     slug: "logiodacomptapro",
-    category: "Logiciel de comptabilité",
+    category: "EXCELT@X LOGIODACOMPTAPRO",
     hero: {
       title: "La comptabilité intelligente pour les entreprises africaines",
       subtitle:
         "Automatisez vos opérations comptables, sécurisez vos données financières et pilotez votre performance en temps réel.",
       description:
         "EXCELT@X ODA COMPTA PRO est une solution de comptabilité conforme aux normes OHADA, conçue pour les PME, grandes entreprises, administrations et organisations souhaitant moderniser leur gestion financière.",
-      image: "/logiciel/hero.png",
+      image: "/logiciel/1.webp",
       primaryButton: {
         text: "Demander une démo",
         url: "/logiciel/demo",
@@ -141,7 +141,7 @@ const logiciel = [
   {
     title: "EXCELT@X ODA PROVIDE PRO",
     slug: "logiodacomptaaprovide",
-    category: "Logiciel de paie et de gestion des ressources humaines",
+    category: "EXCELT@X ODA PROVIDE PRO",
     hero: {
       title:
         "La gestion intelligente de votre paie et de vos ressources humaines",
@@ -149,7 +149,7 @@ const logiciel = [
         "Automatisez la paie, gérez vos collaborateurs et assurez votre conformité sociale avec une solution fiable et performante.",
       description:
         "EXCELT@X ODA PROVIDE PRO est une solution complète dédiée à la gestion de la paie et des ressources humaines. Conçue pour les entreprises, administrations et organisations africaines, elle simplifie les processus RH tout en garantissant la conformité avec les réglementations sociales et fiscales en vigueur.",
-      image: "/logiciel/hero.png",
+      image: "/logiciel/2.webp",
       primaryButton: {
         text: "Demander une démo",
         url: "/logiciel/demo",
@@ -297,15 +297,15 @@ const logiciel = [
     title: "EXCELT@X ODA COMPTA PRO EBNL",
     slug: "logiodacomptaproebnl",
     category:
-      "Logiciel de comptabilité pour les Entités à But Non Lucratif (EBNL)",
+      "EXCELTAX ODACOMPTA PRO EBNL",
     hero: {
       title:
-        "La solution comptable dédiée aux organisations à but non lucratif",
+        "La solution comptable 100% conforme OHADA pour les ONG et associations",
       subtitle:
-        "Gérez vos ressources, vos financements et vos obligations comptables avec une solution adaptée aux associations, ONG, fondations et institutions.",
+        "Le cabinet EXCELTAX, dirigé par un Conseil fiscal agréé CEMAC, est également doté d’un département Intégrateur de logiciels métiers, spécialisé dans les solutions de gestion adaptées aux exigences fiscales et comptables de la zone OHADA.",
       description:
         "EXCELT@X ODA COMPTA PRO EBNL est conçu pour répondre aux exigences comptables des Entités à But Non Lucratif conformément aux normes OHADA, en garantissant une gestion transparente des fonds et une parfaite traçabilité financière.",
-      image: "/logiciel/hero.png",
+      image: "/logiciel/3.webp",
       primaryButton: {
         text: "Demander une démo",
         url: "/logiciel/demo",
@@ -449,7 +449,7 @@ const logiciel = [
   {
     title: "EXCELT@X ODA GESCOM",
     slug: "xlogiodagescom",
-    category: "Logiciel de gestion commerciale",
+    category: "EXCELT@X ODA GESCOM",
     hero: {
       title:
         "Optimisez votre gestion commerciale de la commande à la facturation",
@@ -457,7 +457,7 @@ const logiciel = [
         "Pilotez vos ventes, vos achats, vos stocks et votre relation client avec une solution performante et intégrée.",
       description:
         "EXCELT@X ODA GESCOM est une solution complète de gestion commerciale conçue pour accompagner les entreprises dans l'automatisation de leurs opérations commerciales. De la gestion des devis à la facturation, en passant par les achats et le suivi des stocks, elle vous offre une visibilité complète sur votre activité.",
-      image: "/logiciel/hero.png",
+      image: "/logiciel/4.webp",
       primaryButton: {
         text: "Demander une démo",
         url: "/logiciel/demo",
@@ -605,12 +605,12 @@ const logiciel = [
   {
   "title": "EXCELT@X ODA IMMOB",
   "slug": "xlogiodaimmob",
-  "category": "Logiciel de gestion des immobilisations",
+  "category": "EXCELT@X ODA IMMOB",
   "hero": {
     "title": "Maîtrisez le cycle de vie de vos immobilisations",
     "subtitle": "Gérez efficacement vos actifs, automatisez les amortissements et garantissez la conformité de votre patrimoine.",
     "description": "EXCELT@X ODA IMMOB est une solution dédiée à la gestion des immobilisations corporelles, incorporelles et financières. Elle accompagne les entreprises, administrations et organisations dans le suivi complet de leurs actifs, depuis leur acquisition jusqu'à leur cession, tout en assurant une parfaite conformité avec les normes comptables OHADA.",
-    "image": "/logiciel/hero.png",
+    "image": "/logiciel/5.webp",
     "primaryButton": {
       "text": "Demander une démo",
       "url": "/logiciel/demo"
@@ -740,12 +740,12 @@ const logiciel = [
 {
   "title": "EXCELT@X EXSAFE MANAGER 360",
   "slug": "exsafe",
-  "category": "ERP Cloud - Gestion intégrée de l'entreprise",
+  "category": "EXCELT@X EXSAFE MANAGER 360",
   "hero": {
     "title": "Pilotez toute votre entreprise avec une seule plateforme",
     "subtitle": "L'ERP Cloud intelligent qui centralise vos processus métiers, améliore votre productivité et accélère votre transformation digitale.",
     "description": "EXSAFE MANAGER 360 est la plateforme ERP Cloud développée par EXCELTAX Business Intelligence Group pour accompagner les entreprises, administrations et organisations dans la digitalisation de leurs activités. Finance, achats, ventes, ressources humaines, stocks, projets, CRM et tableaux de bord sont réunis dans une solution unique, sécurisée et accessible partout.",
-    "image": "/logiciel/hero.png",
+    "image": "/logiciel/1.webp",
     "primaryButton": {
       "text": "Demander une démo",
       "url": "/logiciel/demo"
