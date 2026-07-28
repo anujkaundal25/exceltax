@@ -48,11 +48,10 @@ function Header() {
     { name: "JurisFISCAL", url: "/jurisfiscal" },
     {
       name: "Evènements",
-      url: "/event",
+      url: "",
       children: [
-        { name: "Évènements à venir", url: "/event/upcoming" },
-        { name: "Évènements passés", url: "/event/past" },
-        { name: "Galerie", url: "/event/gallery" },
+        { name: "Séminaires", url: "/seminaires" },
+        { name: "Historique", url: "/seminaires/photos" },
       ],
     },
     {
