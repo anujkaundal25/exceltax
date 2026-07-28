@@ -67,11 +67,9 @@ function Header() {
       name: "A propos",
       url: "/apropos",
       children: [
-        { name: "Qui sommes-nous ?", url: "/apropos" },
-        { name: "Notre Équipe", url: "/apropos/equipe" },
-        { name: "Nos Valeurs", url: "/apropos/valeurs" },
-        { name: "Nos Partenaires", url: "/apropos/partenaires" },
-        { name: "Contact", url: "/contact" },
+        { name: "EXCELTAX SERVICES AUX PME", url: "/apropos/services-aux-pme" },
+        { name: "EXCELTAX INTERVENANTS", url: "/apropos/equipe" },
+        { name: "EXCELTAX POLES DE GESTION", url: "/apropos/valeurs" },
       ],
     },
   ];
