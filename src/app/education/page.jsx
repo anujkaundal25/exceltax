@@ -14,7 +14,7 @@ function page() {
       {/* Section Héros */}
       <section className="relative min-h-[85vh] flex items-center justify-center bg-[#0A192F] py-20 px-6 overflow-hidden">
         <Image
-          src="/education/hero-section-bg.jpg"
+          src="/education/1.webp"
           alt="Conformité SYSCOHADA"
           fill
           priority

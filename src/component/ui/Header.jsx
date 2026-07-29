@@ -14,11 +14,20 @@ function Header() {
       url: "/conseil",
       children: [
         { name: "EXCELTAX Fiscalité", url: "/conseil/exceltax-fiscalite" },
-        { name: "EXCELTAX Comptabilité", url: "/conseil/exceltax-comptabilite" },
+        {
+          name: "EXCELTAX Comptabilité",
+          url: "/conseil/exceltax-comptabilite",
+        },
         { name: "EXCELTAX Social", url: "/conseil/exceltax-social" },
         { name: "EXCELTAX DSF", url: "/conseil/exceltax-dsf" },
-        { name: "EXCELTAX FiscaloComptable", url: "/conseil/exceltax-fiscalo-comptable" },
-        { name: "EXCELTAX Recouvrement", url: "/conseil/exceltax-recouvrement" },
+        {
+          name: "EXCELTAX FiscaloComptable",
+          url: "/conseil/exceltax-fiscalo-comptable",
+        },
+        {
+          name: "EXCELTAX Recouvrement",
+          url: "/conseil/exceltax-recouvrement",
+        },
       ],
     },
     {
@@ -26,22 +35,63 @@ function Header() {
       url: "/logiciel",
       children: [
         { name: "EXCELT@X ODA COMPTA PRO", url: "/logiciel/logiodacomptapro" },
-        { name: "EXCELT@X ODA PROVIDE PRO", url: "/logiciel/logiodacomptaaprovide" },
-        { name: "EXCELT@X ODA COMPTA PRO EBNL", url: "/logiciel/logiodacomptaproebnl" },
+        {
+          name: "EXCELT@X ODA PROVIDE PRO",
+          url: "/logiciel/logiodacomptaaprovide",
+        },
+        {
+          name: "EXCELT@X ODA COMPTA PRO EBNL",
+          url: "/logiciel/logiodacomptaproebnl",
+        },
         { name: "EXCELT@X ODA GESCOM", url: "/logiciel/xlogiodagescom" },
         { name: "EXCELT@X ODA IMMOB", url: "/logiciel/xlogiodaimmob" },
         { name: "EXCELT@X EXSAFE MANAGER 360", url: "/logiciel/exsafe" },
-        { name: "Essayer la version démo", url: "/logiciel/demander-assistance" },
-        { name: "Télécharger la fiche de prix et d'information", url: "/logiciel/tarifs" },
+        {
+          name: "Essayer la version démo",
+          url: "/logiciel/demander-assistance",
+        },
+        {
+          name: "Télécharger la fiche de prix et d'information",
+          url: "/logiciel/tarifs",
+        },
       ],
     },
     {
       name: "Education",
       url: "/education",
       children: [
-        { name: "Nos Formations", url: "/education/formations" },
-        { name: "Certifications", url: "/education/certifications" },
-        { name: "Séminaires & Ateliers", url: "/education/seminaires" },
+          {
+            name: "EXCELTAX CQP",
+            url: "/education/certificat-de-qualification-professionnelle",
+          },
+          {
+            name: "EXCELTAX DQP",
+            url: "/education/diplome-de-qualification-professionnelle",
+          },
+          {
+            name: "EXCELTAX Certificat Professionnel",
+            url: "/education/cycle-de-formation-professionnelle-certifiante",
+          },
+          {
+            name: "EXCELTAX Passport Professionnel",
+            url: "/education/guide-etudiant-passeport-professionnel",
+          },
+          {
+            name: "EXCELTAX Master Class",
+            url: "/education/exceltax-masterclass",
+          },
+          {
+            name: "EXCELTAX Conseil-Fiscal-Stagiaire",
+            url: "/education/certification-professionnelle-fiscalocomptable-cemac",
+          },
+          {
+            name: "EXCELTAX Parcours Sup",
+            url: "/education/accompagnement-des-etudiants-internationaux",
+          },
+          {
+            name: "EXCELTAX Le@rn Chill",
+            url: "/education/exceltax-learn-chill",
+          },
       ],
     },
     { name: "Téléprocédure", url: "/teleprocedure" },
@@ -68,8 +118,8 @@ function Header() {
       url: "/apropos",
       children: [
         { name: "EXCELTAX SERVICES AUX PME", url: "/apropos/services-aux-pme" },
-        { name: "EXCELTAX INTERVENANTS", url: "/apropos/equipe" },
-        { name: "EXCELTAX POLES DE GESTION", url: "/apropos/valeurs" },
+        { name: "EXCELTAX INTERVENANTS", url: "/apropos/intervenants" },
+        { name: "EXCELTAX POLES DE GESTION", url: "/apropos/poles-de-gestion" },
       ],
     },
   ];
@@ -139,7 +189,11 @@ function Header() {
           className="xl:hidden p-2 rounded-md text-[#183B63] hover:bg-[#EEF2F5] transition-colors duration-200 focus:outline-none"
           aria-label="Toggle Menu"
         >
-          {isOpen ? <HiX className="h-7 w-7" /> : <HiMenu className="h-7 w-7" />}
+          {isOpen ? (
+            <HiX className="h-7 w-7" />
+          ) : (
+            <HiMenu className="h-7 w-7" />
+          )}
         </button>
       </div>
 
