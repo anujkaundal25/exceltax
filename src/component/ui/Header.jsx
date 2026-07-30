@@ -60,38 +60,38 @@ function Header() {
       name: "Education",
       url: "/education",
       children: [
-          {
-            name: "EXCELTAX CQP",
-            url: "/education/certificat-de-qualification-professionnelle",
-          },
-          {
-            name: "EXCELTAX DQP",
-            url: "/education/diplome-de-qualification-professionnelle",
-          },
-          {
-            name: "EXCELTAX Certificat Professionnel",
-            url: "/education/cycle-de-formation-professionnelle-certifiante",
-          },
-          {
-            name: "EXCELTAX Passport Professionnel",
-            url: "/education/guide-etudiant-passeport-professionnel",
-          },
-          {
-            name: "EXCELTAX Master Class",
-            url: "/education/exceltax-masterclass",
-          },
-          {
-            name: "EXCELTAX Conseil-Fiscal-Stagiaire",
-            url: "/education/certification-professionnelle-fiscalocomptable-cemac",
-          },
-          {
-            name: "EXCELTAX Parcours Sup",
-            url: "/education/accompagnement-des-etudiants-internationaux",
-          },
-          {
-            name: "EXCELTAX Le@rn Chill",
-            url: "/education/exceltax-learn-chill",
-          },
+        {
+          name: "EXCELTAX CQP",
+          url: "/education/certificat-de-qualification-professionnelle",
+        },
+        {
+          name: "EXCELTAX DQP",
+          url: "/education/diplome-de-qualification-professionnelle",
+        },
+        {
+          name: "EXCELTAX Certificat Professionnel",
+          url: "/education/cycle-de-formation-professionnelle-certifiante",
+        },
+        {
+          name: "EXCELTAX Passport Professionnel",
+          url: "/education/guide-etudiant-passeport-professionnel",
+        },
+        {
+          name: "EXCELTAX Master Class",
+          url: "/education/exceltax-masterclass",
+        },
+        {
+          name: "EXCELTAX Conseil-Fiscal-Stagiaire",
+          url: "/education/certification-professionnelle-fiscalocomptable-cemac",
+        },
+        {
+          name: "EXCELTAX Parcours Sup",
+          url: "/education/accompagnement-des-etudiants-internationaux",
+        },
+        {
+          name: "EXCELTAX Le@rn Chill",
+          url: "/education/exceltax-learn-chill",
+        },
       ],
     },
     { name: "Téléprocédure", url: "/teleprocedure" },
@@ -108,9 +108,14 @@ function Header() {
       name: "BIEN ETRE",
       url: "/bien-etre",
       children: [
-        { name: "Santé au Travail", url: "/bien-etre/sante" },
-        { name: "Coaching", url: "/bien-etre/coaching" },
-        { name: "Développement Personnel", url: "/bien-etre/developpement" },
+          { name: "Voie du Taiseido", url: "/bien-etre/taiseido-club" },
+          { name: "Galerie", url: "/bien-etre/galerie" },
+          { name: "N@nbudogi", url: "/bien-etre/nanbudogi" },
+          { name: "Inscription", url: "/bien-etre/inscription" },
+          {
+            name: "Taiseido Vitalité Ch@llenge",
+            url: "/bien-etre/taiseido-vitalite-challenge",
+          },
       ],
     },
     {

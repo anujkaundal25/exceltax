@@ -1257,6 +1257,103 @@ Grâce à notre expertise, nous aidons les étudiants internationaux à :
 Notre objectif est de transformer votre projet d'études en une expérience réussie et durable.
 `,
   },
+  {
+    id: 8,
+    slug: "exceltax-learn-chill",
+    key: "EXCELTAX Le@rn Chill",
+    title: "EXCELTAX LEARN CHILL",
+    dis: "Apprentissage moderne et personnalisé pour la réussite scolaire",
+    content: `
+# EXCELTAX LE@RN CHILL
+Apprentissage moderne et personnalisé pour la réussite scolaire
+
+---
+
+# PRÉSENTATION DU PROJET
+Une initiative éducative innovante pour accompagner la réussite scolaire.
+
+- **Accompagnement Personnalisé** : EXCELTAX LEARN CHILL propose un accompagnement scolaire personnalisé pour les élèves du primaire et du secondaire, dans un espace moderne, climatisé et connecté.
+- **Révision Assistée par Ordinateur** : Nous offrons des séances de révision assistées par ordinateur dans toutes les matières scolaires, permettant aux apprenants de bénéficier d'un apprentissage moderne et interactif.
+
+---
+
+# CONTEXTE ET DÉFIS
+Les limites du système éducatif actuel et nos solutions
+
+## Les Problèmes
+- Le rythme collectif d'apprentissage ne permet pas de combler les lacunes individuelles.
+- Les parents manquent de temps et d'outils pour encadrer efficacement leurs enfants.
+- Les élèves n'ont pas de cadre calme, motivant et adapté à la révision.
+- Manque d'intégration des méthodes modernes et interactives.
+
+## Nos Solutions
+- Accompagnement personnalisé adapté au rythme de chaque élève.
+- Espace moderne et connecté avec outils numériques.
+- Encadrement pédagogique professionnel et régulier.
+- Méthodes interactives et modernes d'apprentissage.
+
+---
+
+# NOS OBJECTIFS
+Favoriser la réussite scolaire et promouvoir l'usage pédagogique des outils numériques
+
+- **Réussite Scolaire** : Favoriser la réussite scolaire des élèves du primaire et du secondaire.
+- **Outils Numériques** : Promouvoir l'usage pédagogique des outils numériques modernes.
+- **Identifier les Difficultés** : Aider chaque apprenant à identifier ses difficultés spécifiques.
+- **Autonomie** : Développer l'autonomie et la méthodologie de recherche de solutions.
+
+---
+
+# NOTRE OFFRE DE SERVICES
+Un accompagnement complet et personnalisé pour tous les niveaux
+
+## 1. Organisation
+- Séances de 2 heures, 2 fois par semaine.
+- Plages horaires : 10h – 20h.
+- Révisions assistées par ordinateur.
+- Encadrement personnalisé.
+
+## 2. Matières Couvertes
+- Français, Anglais, Allemand.
+- Espagnol, Chinois.
+- Mathématiques, Physique.
+- Histoire-Géographie, etc.
+
+## 3. Cadre d'étude
+- Salle climatisée et confortable.
+- Connexion Wi-Fi haut débit.
+- Encadrement pédagogique adapté.
+- Espace sécurisé et motivant.
+
+## Tarif Mensuel
+- **5 000 FCFA** : Abonnement mensuel avec accès à tous nos services.
+
+---
+
+# NOS AVANTAGES COMPÉTITIFS
+Pourquoi choisir EXCELTAX LEARN CHILL ?
+
+- **Encadrement Personnalisé** : Un accompagnement adapté au rythme et aux besoins de chaque élève.
+- **Outils Modernes** : Des outils numériques favorisant l'autonomie et la réussite scolaire.
+- **Espace Confortable** : Un espace de travail confortable, sécurisé et propice à l'apprentissage.
+
+---
+
+# EN CHIFFRES
+- **2** Heures par Séance
+- **2** Séances par Semaine
+- **10** Heures d'Ouverture
+- **5000** FCFA par Mois
+
+---
+
+# CONCLUSION
+Une solution moderne et efficace pour la réussite scolaire
+
+## EXCELTAX LEARN CHILL
+Avec EXCELTAX LEARN CHILL, nous offrons aux élèves un accompagnement scolaire moderne, efficace et accessible. En combinant pédagogie, numérique et confort, nous apportons une solution concrète aux défis de l'éducation actuelle, pour contribuer à la réussite scolaire et personnelle de chaque apprenant.
+`,
+  },
 ];
 
 export default education;
